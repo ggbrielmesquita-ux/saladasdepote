@@ -1,2155 +1,627 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saladas no Pote + Molhos Irresistíveis — 60 Receitas por R$14,99</title>
-  <meta name="description"
-    content="Prepare 7 dias de saladas em 30 minutos. 60 receitas de saladas no pote + molhos caseiros que duram a semana toda na geladeira.">
-
-  <!-- Facebook Pixel -->
+  <title>Saladas no Pote — 60 Receitas Práticas por R$10,00</title>
+  <meta name="description" content="Prepare 7 dias de saladas em 30 minutos. 60 receitas de saladas no pote + molhos caseiros que duram a semana toda.">
+  <link rel="icon" type="image/webp" href="mockup.webp">
   <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      }; if (!f._fbq) f._fbq = n;
-      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
-    }(window,
-      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '902634108552382');
-    fbq('track', 'PageView');
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','902634108552382');fbq('track','PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=902634108552382&ev=PageView&noscript=1" /></noscript>
-
-  <!-- Google Fonts -->
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=902634108552382&ev=PageView&noscript=1"/></noscript>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    /* ─── RESET & BASE ─── */
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --primary: #2E7D32;
-      --primary-dark: #1B5E20;
-      --primary-light: #E8F5E9;
-      --accent: #FF6B00;
-      --accent-hover: #E65100;
-      --text: #333333;
-      --text-light: #666666;
-      --background: #FFFFFF;
-      --background-alt: #F5F5F5;
-      --success: #4CAF50;
-      --error: #E53935;
-      --border: #E0E0E0;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
-      --radius: 12px;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--background);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.2;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* ─── UTILITIES ─── */
-    .container {
-      width: 100%;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .section {
-      padding: 60px 0;
-    }
-
-    .section-alt {
-      background: var(--background-alt);
-    }
-
-    .text-center {
-      text-align: center;
-    }
-
-    .strikethrough {
-      text-decoration: line-through;
-      color: var(--error);
-    }
-
-    .badge {
-      display: inline-block;
-      background: var(--error);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .badge-green {
-      background: var(--success);
-    }
-
-    /* ─── CTA BUTTON ─── */
-    .btn-cta {
-      display: block;
-      width: 100%;
-      max-width: 480px;
-      margin: 0 auto;
-      background: linear-gradient(135deg, var(--accent), #FF8C00);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 800;
-      font-size: 18px;
-      text-align: center;
-      padding: 20px 32px;
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      box-shadow: 0 6px 24px rgba(255, 107, 0, 0.40);
-      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
-      text-decoration: none;
-    }
-
-    .btn-cta:hover {
-      background: linear-gradient(135deg, var(--accent-hover), #E65100);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 32px rgba(255, 107, 0, 0.50);
-    }
-
-    .btn-cta:active {
-      transform: translateY(0);
-    }
-
-    .btn-sub {
-      text-align: center;
-      font-size: 13px;
-      color: var(--text-light);
-      margin-top: 10px;
-    }
-
-    /* ─── COUNTDOWN HERO ─── */
-    .hero-countdown-area {
-      background: #0a2e1c;
-      width: 100%;
-      padding: 18px 20px 20px;
-      text-align: center;
-      border-radius: 12px;
-      margin-bottom: 4px;
-    }
-
-    .countdown-acaba {
-      font-family: 'Poppins', sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.65);
-      margin-bottom: 10px;
-    }
-
-    .countdown-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .countdown-label { display: none; }
-
-    .countdown-blocks {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .cd-block {
-      background: #f5d547;
-      border-radius: 6px;
-      padding: 10px 14px;
-      min-width: 64px;
-      text-align: center;
-    }
-
-    .cd-num {
-      font-family: 'Poppins', sans-serif;
-      font-size: 32px;
-      font-weight: 800;
-      color: #0d3d26;
-      display: block;
-      line-height: 1;
-    }
-
-    .cd-label {
-      font-size: 10px;
-      font-weight: 600;
-      color: #0d3d26;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      opacity: 0.75;
-    }
-
-    .cd-sep {
-      color: #f5d547;
-      font-size: 28px;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-
-    /* prova social hero */
-    .hero-social-proof {
-      font-size: 13px;
-      color: rgba(255,255,255,0.75);
-      text-align: center;
-      margin: 12px 0 4px;
-      letter-spacing: 0.2px;
-    }
-
-    .hero-social-proof strong {
-      color: #f5d547;
-      font-weight: 700;
-    }
-
-    /* ─── HERO ─── */
-    .hero {
-      background: linear-gradient(160deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
-      color: #fff;
-      padding: 50px 0 60px;
-    }
-
-    .hero-inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 32px;
-    }
-
-    .hero-badge-row {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(24px, 5vw, 42px);
-      font-weight: 900;
-      text-align: center;
-      color: #fff;
-      max-width: 720px;
-    }
-
-    .hero h1 em {
-      font-style: normal;
-      color: #FFD54F;
-    }
-
-    .hero-sub {
-      font-size: clamp(15px, 2.5vw, 18px);
-      text-align: center;
-      max-width: 600px;
-      color: rgba(255, 255, 255, 0.92);
-      line-height: 1.7;
-    }
-
-    .hero-img-wrap {
-      position: relative;
-      max-width: 480px;
-      width: 100%;
-    }
-
-    .hero-img-wrap img {
-      border-radius: 16px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-      width: 100%;
-    }
-
-    .hero-img-badge {
-      position: absolute;
-      top: -14px;
-      right: -10px;
-      background: var(--error);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 900;
-      font-size: 15px;
-      padding: 8px 16px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(229, 57, 53, 0.5);
-      white-space: nowrap;
-    }
-
-    .hero-trust {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .hero-trust-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.85);
-    }
-
-    .hero-trust-item svg {
-      flex-shrink: 0;
-    }
-
-    /* ─── PAIN ─── */
-    .pain-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      max-width: 560px;
-      margin: 28px auto 0;
-    }
-
-    .pain-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 16px;
-      background: #fff;
-      border: 1px solid #FFCDD2;
-      border-radius: var(--radius);
-      padding: 14px 16px;
-    }
-
-    .pain-icon {
-      width: 24px;
-      height: 24px;
-      background: var(--error);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .pain-icon svg {
-      display: block;
-    }
-
-    .pain-transition {
-      text-align: center;
-      margin-top: 28px;
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--primary-dark);
-      background: var(--primary-light);
-      padding: 14px 24px;
-      border-radius: var(--radius);
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* ─── SOLUTION ─── */
-    .solution-desc {
-      max-width: 600px;
-      margin: 16px auto 0;
-      font-size: 17px;
-      text-align: center;
-      color: var(--text-light);
-      line-height: 1.7;
-    }
-
-    .benefit-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-      max-width: 560px;
-      margin: 28px auto 0;
-    }
-
-    @media (min-width: 540px) {
-      .benefit-list {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .benefit-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-
-    .check-icon {
-      width: 22px;
-      height: 22px;
-      background: var(--success);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    /* ─── RECIPE CARDS ─── */
-    .section-title {
-      font-size: clamp(22px, 4vw, 32px);
-      font-weight: 800;
-      text-align: center;
-      color: var(--primary-dark);
-    }
-
-    .section-title span {
-      color: var(--accent);
-    }
-
-    .recipe-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    @media (min-width: 640px) {
-      .recipe-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (min-width: 860px) {
-      .recipe-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    .recipe-card {
-      background: #fff;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .recipe-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.14);
-    }
-
-    .recipe-card img {
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-    }
-
-    .recipe-card-body {
-      padding: 10px 12px 12px;
-    }
-
-    .recipe-name {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--primary-dark);
-      line-height: 1.3;
-      margin-bottom: 6px;
-    }
-
-    .recipe-meta {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .recipe-tag {
-      font-size: 10px;
-      background: var(--primary-light);
-      color: var(--primary-dark);
-      border-radius: 20px;
-      padding: 2px 8px;
-      font-weight: 600;
-    }
-
-    /* ─── AUTHORITY ─── */
-    .authority-inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 28px;
-    }
-
-    @media (min-width: 640px) {
-      .authority-inner {
-        flex-direction: row;
-        gap: 40px;
-      }
-    }
-
-    .authority-photo {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: top;
-      border: 5px solid var(--primary);
-      box-shadow: 0 8px 24px rgba(46, 125, 50, 0.25);
-      flex-shrink: 0;
-    }
-
-    .authority-text h2 {
-      font-size: clamp(20px, 3.5vw, 28px);
-      font-weight: 800;
-      color: var(--primary-dark);
-      margin-bottom: 12px;
-    }
-
-    .authority-text p {
-      font-size: 16px;
-      color: var(--text-light);
-      line-height: 1.7;
-    }
-
-    .authority-stats {
-      justify-content: center;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 16px;
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-num {
-      font-family: 'Poppins', sans-serif;
-      font-size: 24px;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .stat-label {
-      font-size: 12px;
-      color: var(--text-light);
-    }
-
-    /* ─── TESTIMONIALS ─── */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-top: 28px;
-    }
-
-    @media (min-width: 560px) {
-      .testimonials-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (min-width: 860px) {
-      .testimonials-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .testimonial-card {
-      background: #fff;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
-
-    .testimonial-card img {
-      width: 100%;
-      height: auto;
-    }
-
-    .testimonial-body {
-      padding: 14px 16px 16px;
-    }
-
-    .testimonial-stars {
-      color: #FFB300;
-      font-size: 16px;
-      letter-spacing: 2px;
-      margin-bottom: 8px;
-    }
-
-    .testimonial-text {
-      font-size: 14px;
-      line-height: 1.6;
-      color: var(--text);
-      font-style: italic;
-    }
-
-    .testimonial-name {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-top: 10px;
-    }
-
-    /* ─── WHAT YOU GET ─── */
-    .product-showcase {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 28px;
-    }
-
-    @media (min-width: 640px) {
-      .product-showcase {
-        flex-direction: row;
-      }
-    }
-
-    .product-showcase img {
-      max-width: 400px;
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: var(--shadow);
-    }
-
-    /* ─── BONUS ─── */
-    .bonus-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-top: 28px;
-    }
-
-    @media (min-width: 560px) {
-      .bonus-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .bonus-card {
-      background: #fff;
-      border: 2px solid var(--success);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      text-align: center;
-      position: relative;
-    }
-
-    .bonus-card-tag {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: var(--success);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-size: 11px;
-      font-weight: 800;
-      padding: 3px 10px;
-      border-radius: 20px;
-      text-transform: uppercase;
-    }
-
-    .bonus-card img {
-      width: 100%;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-    }
-
-    .bonus-card-body {
-      padding: 12px 14px 16px;
-    }
-
-    .bonus-card-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-bottom: 6px;
-    }
-
-    .bonus-original {
-      font-size: 13px;
-      color: var(--text-light);
-    }
-
-    /* ─── PRICING ─── */
-    .pricing-section {
-      background: var(--background-alt);
-      padding: 60px 0;
-    }
-
-    .offer-card {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #1B5E20;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.30);
-    }
-
-    /* Timer no topo do card */
-    .offer-timer-bar {
-      background: rgba(0, 0, 0, 0.25);
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    .offer-timer-label {
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.9);
-      white-space: nowrap;
-    }
-
-    .offer-timer-display {
-      font-family: 'Poppins', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      color: #FFD700;
-      letter-spacing: 2px;
-    }
-
-    @keyframes pulse-timer {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.6;
-      }
-    }
-
-    .offer-timer-display.urgent {
-      animation: pulse-timer 1s ease-in-out infinite;
-    }
-
-    /* Corpo do card */
-    .offer-card-body {
-      padding: 28px 28px 32px;
-    }
-
-    @media (max-width: 480px) {
-      .offer-card-body {
-        padding: 20px 16px 24px;
-      }
-    }
-
-    .offer-card-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(17px, 3.5vw, 22px);
-      font-weight: 800;
-      color: #fff;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    /* Stack de valor */
-    .value-stack {
-      background: rgba(0, 0, 0, 0.20);
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-    }
-
-    .value-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 7px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-      font-size: 14px;
-      gap: 8px;
-    }
-
-    .value-row:last-child {
-      border-bottom: none;
-    }
-
-    .value-row-left {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    .value-check {
-      width: 18px;
-      height: 18px;
-      background: var(--success);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .value-row .val {
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.85);
-      white-space: nowrap;
-    }
-
-    .value-row.total-row {
-      padding-top: 12px;
-      margin-top: 4px;
-      border-top: 1px solid rgba(255, 255, 255, 0.35);
-    }
-
-    .value-row.total-row .value-row-left {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 15px;
-      color: #fff;
-    }
-
-    .value-row.total-row .val {
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      color: #EF9A9A;
-      text-decoration: line-through;
-    }
-
-    /* Badge desconto */
-    .offer-discount-badge {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-
-    .offer-discount-badge span {
-      background: #FFD700;
-      color: #1B1B1B;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 900;
-      font-size: 16px;
-      padding: 6px 24px;
-      border-radius: 30px;
-      letter-spacing: 0.5px;
-    }
-
-    @keyframes badge-bounce {
-
-      0%,
-      100% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(1.05);
-      }
-    }
-
-    .offer-discount-badge span {
-      animation: badge-bounce 2s ease-in-out infinite;
-    }
-
-    /* Bloco de preço */
-    .price-block {
-      text-align: center;
-      margin-bottom: 22px;
-    }
-
-    .price-from-text {
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.70);
-      margin-bottom: 4px;
-    }
-
-    .price-from-text s {
-      color: #EF9A9A;
-    }
-
-    .price-main-value {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(56px, 14vw, 80px);
-      font-weight: 900;
-      color: #FFD700;
-      line-height: 1;
-      margin: 2px 0 6px;
-    }
-
-    .price-main-value sup {
-      font-size: 32px;
-      vertical-align: super;
-    }
-
-    .price-installment-text {
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.85);
-    }
-
-    .price-installment-text strong {
-      color: #fff;
-    }
-
-    .price-installment-text em {
-      font-style: normal;
-      color: #69F0AE;
-      font-weight: 600;
-    }
-
-    /* CTA dentro do card */
-    .offer-cta {
-      display: block;
-      width: 100%;
-      background: linear-gradient(135deg, #FF6B00, #FF8C00);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 800;
-      font-size: clamp(16px, 4vw, 20px);
-      text-align: center;
-      padding: 20px 24px;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      box-shadow: 0 6px 20px rgba(255, 107, 0, 0.45);
-      transition: transform 0.15s, box-shadow 0.15s;
-      text-decoration: none;
-      margin-bottom: 12px;
-    }
-
-    .offer-cta:hover {
-      transform: scale(1.02);
-      background: linear-gradient(135deg, #E65100, #FF6B00);
-      box-shadow: 0 10px 28px rgba(255, 107, 0, 0.55);
-    }
-
-    .offer-microcopy {
-      text-align: center;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.75);
-      margin-bottom: 20px;
-    }
-
-    /* Trust badges */
-    .trust-icons {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
-    }
-
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.85);
-      background: rgba(255, 255, 255, 0.08);
-      padding: 6px 12px;
-      border-radius: 20px;
-      white-space: nowrap;
-    }
-
-    /* Payment logos */
-    .payment-logos {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .pay-logo {
-      background: rgba(255, 255, 255, 0.10);
-      border-radius: 8px;
-      padding: 5px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 36px;
-    }
-
-    .pay-logo img {
-      height: 20px;
-      width: auto;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-      opacity: 0.9;
-    }
-
-    .pay-logo-text {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    /* Objection breaker */
-    .offer-objection {
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      padding-top: 16px;
-      text-align: center;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.65);
-      font-style: italic;
-      line-height: 1.6;
-    }
-
-    /* ─── GUARANTEE ─── */
-    .guarantee-inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    .guarantee-seal {
-      width: 120px;
-      height: 120px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      border-radius: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      border: 4px solid var(--primary-dark);
-      box-shadow: 0 8px 24px rgba(46, 125, 50, 0.30);
-      flex-shrink: 0;
-    }
-
-    .guarantee-seal-num {
-      font-size: 36px;
-      font-weight: 900;
-      line-height: 1;
-    }
-
-    .guarantee-seal-days {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .guarantee-seal-text {
-      font-size: 9px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      opacity: 0.85;
-    }
-
-    .guarantee-text h2 {
-      font-size: clamp(20px, 3.5vw, 28px);
-      color: var(--primary-dark);
-      margin-bottom: 12px;
-    }
-
-    .guarantee-text p {
-      font-size: 16px;
-      color: var(--text-light);
-      line-height: 1.7;
-    }
-
-    /* ─── FAQ ─── */
-    .faq-list {
-      max-width: 680px;
-      margin: 28px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .faq-item {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-    }
-
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-      cursor: pointer;
-      user-select: none;
-      font-family: 'Poppins', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--primary-dark);
-      gap: 12px;
-    }
-
-    .faq-question:hover {
-      background: var(--primary-light);
-    }
-
-    .faq-arrow {
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-      transition: transform 0.25s;
-    }
-
-    .faq-item.open .faq-arrow {
-      transform: rotate(180deg);
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0 20px 16px;
-      font-size: 15px;
-      color: var(--text-light);
-      line-height: 1.7;
-      border-top: 1px solid var(--border);
-    }
-
-    .faq-item.open .faq-answer {
-      display: block;
-    }
-
-    /* ─── CTA FINAL ─── */
-    .cta-final {
-      background: linear-gradient(160deg, var(--primary-dark), var(--primary));
-      color: #fff;
-      padding: 60px 0;
-    }
-
-    .cta-final h2 {
-      font-size: clamp(22px, 4vw, 34px);
-      font-weight: 900;
-      text-align: center;
-      color: #fff;
-      max-width: 600px;
-      margin: 0 auto 12px;
-    }
-
-    .cta-final p {
-      text-align: center;
-      font-size: 17px;
-      color: rgba(255, 255, 255, 0.88);
-      max-width: 520px;
-      margin: 0 auto 28px;
-      line-height: 1.7;
-    }
-
-    /* ─── FOOTER ─── */
-    footer {
-      background: #111;
-      color: rgba(255, 255, 255, 0.5);
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 13px;
-    }
-
-    footer a {
-      color: rgba(255, 255, 255, 0.6);
-      text-decoration: underline;
-    }
-
-    footer a:hover {
-      color: #fff;
-    }
-
-    footer .footer-links {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    /* ─── STICKY CTA (mobile) ─── */
-    .sticky-cta {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      background: #fff;
-      padding: 12px 20px;
-      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-      display: none;
-    }
-
-    @media (max-width: 640px) {
-      .sticky-cta {
-        display: block;
-      }
-
-      body {
-        padding-bottom: 80px;
-      }
-    }
-
-    .sticky-cta .btn-cta {
-      font-size: 15px;
-      padding: 16px 24px;
-    }
-
-    /* ─── DIVIDER ─── */
-    .section-divider {
-      width: 60px;
-      height: 4px;
-      background: var(--accent);
-      border-radius: 2px;
-      margin: 12px auto 0;
-    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f6faf7;
+      --bg2:#eef5f0;
+      --bg3:#ffffff;
+      --accent:#2e8b57;
+      --accent2:#3da36a;
+      --accent-light:#d4edda;
+      --accent-glow:rgba(46,139,87,.2);
+      --yellow:#d4a017;
+      --green:#2e8b57;
+      --red:#c0392b;
+      --text:#2d3436;
+      --text2:#555e60;
+      --text3:#7f8c8d;
+      --radius:12px;
+      --shadow:0 2px 16px rgba(0,0,0,.06);
+      --shadow-lg:0 8px 32px rgba(0,0,0,.08);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:680px;margin:0 auto;padding:0 20px}
+
+    /* ── CTA BUTTON ── */
+    .btn-cta{
+      display:block;width:100%;max-width:480px;margin:0 auto;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff;font-family:'Outfit',sans-serif;font-weight:800;font-size:17px;
+      text-align:center;padding:20px 28px;border-radius:60px;border:none;
+      cursor:pointer;text-transform:uppercase;letter-spacing:.5px;
+      box-shadow:0 4px 20px var(--accent-glow);
+      transition:transform .2s,box-shadow .2s;text-decoration:none;
+    }
+    .btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(46,139,87,.3)}
+    .btn-sub{text-align:center;font-size:13px;color:var(--text3);margin-top:10px}
+
+    /* ── HERO ── */
+    .hero{
+      background:#ffffff;
+      padding:32px 0 40px;text-align:center;
+    }
+    .hero h1{
+      font-size:clamp(24px,5.5vw,38px);font-weight:900;line-height:1.2;
+      max-width:600px;margin:0 auto 14px;color:var(--text);
+    }
+    .hero h1 em{
+      font-style:normal;color:var(--accent);
+      text-decoration:underline;text-decoration-color:var(--accent-light);
+      text-underline-offset:4px;text-decoration-thickness:3px;
+    }
+    .hero-sub{
+      font-size:clamp(15px,2.5vw,17px);color:var(--text2);
+      max-width:500px;margin:0 auto 24px;line-height:1.7;
+    }
+    .hero-img{
+      max-width:380px;margin:0 auto 24px;border-radius:16px;
+      box-shadow:var(--shadow-lg);
+    }
+    .hero-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+    .hero-badges span{
+      display:flex;align-items:center;gap:6px;font-size:13px;
+      color:var(--text2);background:var(--accent-light);
+      padding:6px 14px;border-radius:20px;font-weight:500;
+    }
+
+    /* ── SECTIONS ── */
+    .section{padding:48px 0}
+    .section-alt{background:var(--bg2)}
+    .stitle{
+      font-size:clamp(22px,5vw,32px);font-weight:800;
+      text-align:center;line-height:1.25;margin-bottom:8px;color:var(--text);
+    }
+    .stitle span{color:var(--accent)}
+    .sdivider{width:50px;height:4px;background:var(--accent);border-radius:2px;margin:0 auto 24px}
+    .sdesc{
+      text-align:center;color:var(--text2);font-size:16px;
+      max-width:520px;margin:0 auto 28px;line-height:1.7;
+    }
+
+    /* ── PAIN ── */
+    .pain-list{list-style:none;display:flex;flex-direction:column;gap:10px;max-width:540px;margin:0 auto}
+    .pain-list li{
+      display:flex;align-items:flex-start;gap:12px;font-size:15px;
+      background:#fff;border:1px solid #f0e0e0;border-radius:var(--radius);
+      padding:14px 16px;color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.03);
+    }
+    .pain-x{
+      width:22px;height:22px;background:var(--red);border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;margin-top:1px;font-size:11px;color:#fff;font-weight:900;
+    }
+    .pain-transition{
+      text-align:center;margin-top:20px;font-size:16px;font-weight:700;
+      color:var(--accent);padding:16px 24px;border-radius:var(--radius);
+      background:var(--accent-light);max-width:480px;
+      margin-left:auto;margin-right:auto;
+    }
+
+    /* ── BENEFITS ── */
+    .benefit-grid{display:grid;grid-template-columns:1fr;gap:8px;max-width:480px;margin:0 auto}
+    @media(min-width:480px){.benefit-grid{grid-template-columns:1fr 1fr}}
+    .benefit-grid li{
+      display:flex;align-items:flex-start;gap:10px;font-size:15px;
+      font-weight:500;list-style:none;color:var(--text);
+    }
+    .bcheck{
+      width:20px;height:20px;background:var(--green);border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;margin-top:2px;font-size:10px;color:#fff;font-weight:900;
+    }
+
+    /* ── RECIPE LIST (vertical) ── */
+    .recipe-list{
+      display:flex;flex-direction:column;gap:14px;
+      max-width:540px;margin:0 auto 28px;
+    }
+    .recipe-item{
+      display:flex;align-items:center;gap:16px;
+      background:#fff;border-radius:var(--radius);padding:10px;
+      box-shadow:var(--shadow);border:1px solid #e8f0ea;
+      transition:transform .2s;
+    }
+    .recipe-item:hover{transform:translateX(4px)}
+    .recipe-item img{
+      width:90px;height:90px;border-radius:10px;object-fit:cover;flex-shrink:0;
+    }
+    .recipe-info{flex:1}
+    .recipe-name{font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px}
+    .recipe-tags{display:flex;gap:6px;flex-wrap:wrap}
+    .recipe-tag{
+      font-size:11px;background:var(--accent-light);color:var(--accent);
+      border-radius:20px;padding:3px 10px;font-weight:600;
+    }
+    .recipe-more{
+      text-align:center;padding:20px;background:var(--accent-light);
+      border-radius:var(--radius);border:2px dashed var(--accent);
+    }
+    .recipe-more p:first-child{font-size:32px;font-weight:900;color:var(--accent)}
+    .recipe-more p:last-child{font-size:14px;color:var(--text2);font-weight:600;margin-top:4px}
+
+    /* ── TESTIMONIALS ── */
+    .test-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(min-width:640px){.test-grid{grid-template-columns:repeat(3,1fr)}}
+    .test-grid img{width:100%;border-radius:var(--radius);display:block;box-shadow:var(--shadow)}
+
+    /* ── PRICING ── */
+    .offer-card{
+      max-width:520px;margin:0 auto;background:#fff;
+      border:2px solid var(--accent-light);border-radius:20px;
+      overflow:hidden;box-shadow:var(--shadow-lg);
+    }
+    .offer-header{
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      padding:16px;text-align:center;font-weight:700;font-size:15px;color:#fff;
+    }
+    .offer-body{padding:28px 24px 32px}
+    @media(max-width:480px){.offer-body{padding:20px 16px 24px}}
+    .value-stack{
+      background:var(--bg2);border-radius:12px;padding:16px 18px;margin-bottom:20px;
+    }
+    .vrow{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:7px 0;border-bottom:1px solid #e0e8e2;font-size:14px;color:var(--text2);
+    }
+    .vrow:last-child{border-bottom:none}
+    .vrow .val{font-weight:600;color:var(--text3);white-space:nowrap}
+    .vrow.total{
+      padding-top:12px;margin-top:4px;border-top:2px solid var(--accent-light);
+      font-weight:700;font-size:15px;color:var(--text);
+    }
+    .vrow.total .val{color:var(--red);text-decoration:line-through;font-size:16px}
+    .discount-badge{text-align:center;margin-bottom:16px}
+    .discount-badge span{
+      background:var(--accent);color:#fff;font-weight:800;font-size:16px;
+      padding:8px 28px;border-radius:30px;display:inline-block;
+    }
+    .price-block{text-align:center;margin-bottom:22px}
+    .price-from{font-size:15px;color:var(--text3);margin-bottom:4px}
+    .price-from s{color:var(--red)}
+    .price-big{
+      font-size:clamp(56px,14vw,80px);font-weight:900;
+      color:var(--accent);line-height:1;margin:4px 0 8px;
+    }
+    .price-big sup{font-size:28px;vertical-align:super}
+    .price-installment{font-size:15px;color:var(--text2)}
+    .price-installment strong{color:var(--text)}
+    .price-installment em{font-style:normal;color:var(--accent);font-weight:600}
+    .offer-cta{
+      display:block;width:100%;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff;font-weight:800;font-size:clamp(16px,3.5vw,19px);
+      text-align:center;padding:20px 24px;border-radius:12px;border:none;
+      cursor:pointer;text-transform:uppercase;letter-spacing:.5px;
+      box-shadow:0 4px 20px var(--accent-glow);
+      transition:transform .15s;text-decoration:none;margin-bottom:14px;
+    }
+    .offer-cta:hover{transform:scale(1.02)}
+    .offer-micro{text-align:center;font-size:13px;color:var(--text3);margin-bottom:18px}
+    .trust-row{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+    .trust-item{
+      display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text2);
+      background:var(--bg2);padding:6px 12px;border-radius:20px;white-space:nowrap;
+    }
+    .pay-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+    .pay-logo{
+      background:var(--bg2);border-radius:8px;padding:6px 14px;
+      font-weight:700;font-size:13px;color:var(--text3);
+    }
+
+    /* ── GUARANTEE ── */
+    .guarantee{
+      display:flex;flex-direction:column;align-items:center;
+      text-align:center;gap:20px;max-width:560px;margin:0 auto;
+    }
+    .guarantee-seal{
+      width:100px;height:100px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      border-radius:50%;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;color:#fff;
+      font-weight:900;flex-shrink:0;box-shadow:0 4px 20px var(--accent-glow);
+    }
+    .guarantee-seal .num{font-size:32px;line-height:1}
+    .guarantee-seal .lbl{font-size:10px;text-transform:uppercase;letter-spacing:1px}
+    .guarantee p{font-size:15px;color:var(--text2);line-height:1.7}
+
+    /* ── FAQ ── */
+    .faq-list{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+    .faq-item{
+      background:#fff;border:1px solid #e0e8e2;
+      border-radius:var(--radius);overflow:hidden;
+    }
+    .faq-q{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px 18px;cursor:pointer;font-size:15px;
+      font-weight:600;color:var(--text);gap:12px;
+    }
+    .faq-q:hover{background:var(--bg2)}
+    .faq-arrow{
+      width:20px;height:20px;flex-shrink:0;
+      transition:transform .25s;stroke:var(--accent);
+    }
+    .faq-item.open .faq-arrow{transform:rotate(180deg)}
+    .faq-a{
+      display:none;padding:0 18px 16px;font-size:15px;
+      color:var(--text2);line-height:1.7;border-top:1px solid #e0e8e2;
+    }
+    .faq-item.open .faq-a{display:block}
+
+    /* ── CTA FINAL ── */
+    .cta-final{
+      background:linear-gradient(160deg,var(--accent-light),#f0f8f2);
+      padding:48px 0;text-align:center;
+    }
+    .cta-final h2{
+      font-size:clamp(22px,5vw,32px);font-weight:800;
+      color:var(--text);max-width:520px;margin:0 auto 14px;
+    }
+    .cta-final p{
+      font-size:16px;color:var(--text2);max-width:460px;
+      margin:0 auto 24px;line-height:1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer{
+      background:#f0f0f0;color:var(--text3);text-align:center;
+      padding:28px 20px;font-size:13px;
+    }
+    footer a{color:var(--text3);text-decoration:underline}
+    footer .flinks{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
+
+    /* ── STICKY ── */
+    .sticky-cta{
+      position:fixed;bottom:0;left:0;right:0;z-index:999;
+      background:rgba(246,250,247,.96);backdrop-filter:blur(10px);
+      padding:12px 20px;box-shadow:0 -2px 16px rgba(0,0,0,.08);display:none;
+    }
+    @media(max-width:640px){.sticky-cta{display:block}body{padding-bottom:76px}}
+    .sticky-cta .btn-cta{font-size:15px;padding:16px 24px}
+
+    /* ── WHATSAPP ── */
+    .wpp-float{position:fixed;bottom:80px;right:20px;z-index:9999}
+    .wpp-btn{
+      width:56px;height:56px;background:#25D366;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .2s;
+    }
+    .wpp-btn:hover{transform:scale(1.08)}
+    .wpp-btn svg{width:30px;height:30px;fill:#fff}
+    @media(max-width:640px){.wpp-float{bottom:72px;right:14px}.wpp-btn{width:50px;height:50px}}
+
+    /* ── BONUS SECTION ── */
+    .bonus-grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:540px){.bonus-grid{grid-template-columns:repeat(3,1fr)}}
+    .bonus-card{
+      background:#fff;border:1px solid #e0e8e2;border-radius:var(--radius);
+      overflow:hidden;text-align:center;position:relative;box-shadow:var(--shadow);
+    }
+    .bonus-card-tag{
+      position:absolute;top:10px;right:10px;background:var(--accent);
+      color:#fff;font-size:11px;font-weight:800;padding:3px 10px;
+      border-radius:20px;text-transform:uppercase;
+    }
+    .bonus-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+    .bonus-card-body{padding:12px 14px 16px}
+    .bonus-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px}
+    .bonus-val{font-size:13px;color:var(--text3)}
+    .bonus-val s{color:var(--red)}
+
+    /* ── AUTHORITY ── */
+    .auth-inner{
+      display:flex;flex-direction:column;align-items:center;
+      gap:24px;text-align:center;
+    }
+    @media(min-width:640px){.auth-inner{flex-direction:row;text-align:left}}
+    .auth-photo{
+      width:140px;height:140px;border-radius:50%;object-fit:cover;
+      object-position:top;border:4px solid var(--accent);
+      box-shadow:0 4px 20px var(--accent-glow);flex-shrink:0;
+    }
+    .auth-text h2{
+      font-size:clamp(20px,3.5vw,24px);font-weight:800;
+      color:var(--text);margin-bottom:8px;
+    }
+    .auth-text p{font-size:15px;color:var(--text2);line-height:1.7}
+    .auth-stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:12px;justify-content:center}
+    @media(min-width:640px){.auth-stats{justify-content:flex-start}}
+    .stat-n{font-size:20px;font-weight:900;color:var(--accent)}
+    .stat-l{font-size:12px;color:var(--text3)}
   </style>
 </head>
-
 <body>
 
-  <!-- ━━━━━ HERO ━━━━━ -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
+<!-- ━━━ HERO ━━━ -->
+<section class="hero">
+  <div class="container">
 
-        <!-- COUNTDOWN -->
-        <div class="hero-countdown-area">
-          <p class="countdown-acaba">Acaba em:</p>
-          <div class="countdown-wrap">
-            <div class="countdown-blocks">
-              <div class="cd-block">
-                <span class="cd-num" id="cd-h">00</span>
-                <span class="cd-label">Horas</span>
-              </div>
-              <span class="cd-sep">:</span>
-              <div class="cd-block">
-                <span class="cd-num" id="cd-m">10</span>
-                <span class="cd-label">Min</span>
-              </div>
-              <span class="cd-sep">:</span>
-              <div class="cd-block">
-                <span class="cd-num" id="cd-s">00</span>
-                <span class="cd-label">Seg</span>
-              </div>
-            </div>
-          </div>
-          <p style="margin-top:10px; font-size:13px; font-weight:700; color:#f5d547; letter-spacing:0.5px;">88% OFF — Só Hoje</p>
-        </div>
+    <img src="logo-hero.png" alt="Saladas no Pote" loading="eager" style="max-width:500px;width:100%;margin:0 auto 16px;">
 
-        <!-- PROVA SOCIAL -->
-        <p class="hero-social-proof">✓ Já são mais de <strong>10 mil</strong> clientes satisfeitos</p>
+    <h1>Chega de <em>jogar salada fora</em> e comer sempre a mesma coisa!</h1>
+    <p class="hero-sub">Prepare <strong>7 dias de saladas em apenas 30 minutos</strong> — frescas, saborosas e prontas pra comer direto do pote.</p>
 
-        <img src="logo-hero.png" alt="Saladas no Pote" loading="eager" style="max-width:680px; width:100%; height:auto; display:block; margin:0 auto 4px;">
+    <img src="imagem-produto.webp" alt="Saladas no Pote" loading="eager" class="hero-img" width="480" height="360">
 
-        <div class="hero-img-wrap">
-          <img src="imagem-produto.webp" alt="Saladas no Pote — Produto Digital" loading="eager" width="480"
-            height="360">
-        </div>
 
-        <a href="https://pay.cakto.com.br/yqj9k4a_829932" class="btn-cta" id="hero-cta"
-          onclick="fbq('track','InitiateCheckout')">
-          QUERO MINHAS RECEITAS
-        </a>
-        <p class="btn-sub" style="color:rgba(255,255,255,0.75);">Compra 100% Segura &nbsp;|&nbsp; Acesso Imediato
-          &nbsp;|&nbsp; 7 Dias de Garantia</p>
-
-        <div class="hero-trust">
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD54F" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Acesso imediato
-          </span>
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD54F" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Funciona pelo celular
-          </span>
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD54F" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            Garantia de 7 dias
-          </span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ DOR ━━━━━ -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Isso <span>acontece com você?</span></h2>
-      <div class="section-divider"></div>
-
-      <ul class="pain-list">
-        <li>
-          <span class="pain-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-              stroke-width="3" stroke-linecap="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg></span>
-          Preguiça de lavar e cortar salada todo dia
-        </li>
-        <li>
-          <span class="pain-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-              stroke-width="3" stroke-linecap="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg></span>
-          Joga salada fora antes de conseguir usar
-        </li>
-        <li>
-          <span class="pain-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-              stroke-width="3" stroke-linecap="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg></span>
-          Deixa de comer salada alguns dias da semana
-        </li>
-        <li>
-          <span class="pain-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-              stroke-width="3" stroke-linecap="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg></span>
-          Cansou de alface e tomate sempre igual
-        </li>
-        <li>
-          <span class="pain-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-              stroke-width="3" stroke-linecap="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg></span>
-          Já come saudável, mas falha na salada
-        </li>
-      </ul>
-
-      <p class="pain-transition">Se você marcou pelo menos 2 dessas, continue lendo... 👇</p>
-    </div>
-  </section>
-
-  <!-- ━━━━━ SOLUÇÃO ━━━━━ -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Apresento: <span>Saladas no Pote + Molhos Irresistíveis</span></h2>
-      <div class="section-divider"></div>
-      <p class="solution-desc">O método completo para você preparar todas as saladas da semana em apenas 30 minutos no
-        domingo — e ter refeições frescas, saborosas e prontas para comer até sexta-feira.</p>
-
-      <div class="product-showcase" style="margin-top:32px;">
-        <img src="oque-vc-vai-encontrar.webp" alt="O que você vai encontrar" loading="lazy">
-        <ul class="benefit-list" style="max-width:none; margin:0;">
-          <li>
-            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                stroke-width="3" stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg></span>
-            Funciona com qualquer pote que você já tem
-          </li>
-          <li>
-            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                stroke-width="3" stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg></span>
-            60 saladas diferentes para nunca enjoar
-          </li>
-          <li>
-            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                stroke-width="3" stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg></span>
-            Molhos caseiros que transformam o sabor
-          </li>
-          <li>
-            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                stroke-width="3" stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg></span>
-            Conservação garantida de 5–7 dias
-          </li>
-          <li>
-            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                stroke-width="3" stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg></span>
-            Passo a passo simples e direto
-          </li>
-          <li>
-            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                stroke-width="3" stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg></span>
-            Ingredientes de supermercado comum
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ RECEITAS ━━━━━ -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Algumas Saladas Que Você Vai <span>Aprender:</span></h2>
-      <div class="section-divider"></div>
-
-      <div class="recipe-grid">
-
-        <div class="recipe-card">
-          <img src="salada-refrescante-molho-citrico.png" alt="Salada Refrescante + Molho Cítrico" loading="lazy"
-            width="240" height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Refrescante + Molho Cítrico</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">100 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card">
-          <img src="salada-caprese.png" alt="Salada Caprese" loading="lazy" width="240" height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Caprese</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">120 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card">
-          <img src="salada-caesar-molho-original.png" alt="Salada Caesar + Molho Original" loading="lazy" width="240"
-            height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Caesar + Molho Original</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">115 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card">
-          <img src="salada-big-mac-molho-especial.png" alt="Salada Big Mac + Molho Especial" loading="lazy"
-            width="240" height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Big Mac + Molho Especial</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">180 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card">
-          <img src="salada-mediterranea-molho-agridoce.png" alt="Salada Mediterrânea + Molho Agridoce" loading="lazy"
-            width="240" height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Mediterrânea + Molho Agridoce</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">120 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card">
-          <img src="salada-toscana-molho-siciliano.png" alt="Salada Toscana + Molho Siciliano" loading="lazy"
-            width="240" height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Toscana + Molho Siciliano</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">130 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card">
-          <img src="salada-rustica-mostarda-e-mel.png" alt="Salada Rústica + Mostarda e Mel" loading="lazy"
-            width="240" height="240">
-          <div class="recipe-card-body">
-            <p class="recipe-name">Salada Rústica + Mostarda e Mel</p>
-            <div class="recipe-meta">
-              <span class="recipe-tag">160 kcal</span>
-              <span class="recipe-tag">7 dias</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="recipe-card"
-          style="display:flex; align-items:center; justify-content:center; background:var(--primary-light); min-height:180px;">
-          <div style="text-align:center; padding:20px;">
-            <p style="font-family:'Poppins',sans-serif; font-size:32px; font-weight:900; color:var(--primary-dark);">+53
-            </p>
-            <p style="font-size:13px; font-weight:600; color:var(--primary); margin-top:4px;">receitas exclusivas<br>te
-              esperando!</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ AUTORIDADE ━━━━━ -->
-  <section class="section">
-    <div class="container">
-      <div class="authority-inner">
-        <img src="marina.png" alt="Marina Albuquerque — Nutri Aurora" class="authority-photo"
-          loading="lazy" width="180" height="180">
-        <div class="authority-text">
-          <h2>Quem é Marina Albuquerque?</h2>
-          <p>Minhas receitas de Saladas no Pote e Molhos Irresistíveis sempre fizeram sucesso na internet. Resolvi
-            reunir as 60 melhores receitas em um único lugar e compartilhar esse conhecimento com você também.</p>
-          <div class="authority-stats">
-            <div class="stat-item">
-              <div class="stat-num">10.000+</div>
-              <div class="stat-label">alunas satisfeitas</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-num">60</div>
-              <div class="stat-label">receitas exclusivas</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-num">7 dias</div>
-              <div class="stat-label">de conservação</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ DEPOIMENTOS ━━━━━ -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Veja o Que Nossas <span>Alunas Estão Dizendo:</span></h2>
-      <div class="section-divider"></div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card"><img src="prova-social-1.webp" alt="Depoimento aluna 1" loading="lazy"
-            style="width:100%;display:block;border-radius:var(--radius);"></div>
-        <div class="testimonial-card"><img src="prova-social-2.webp" alt="Depoimento aluna 2" loading="lazy"
-            style="width:100%;display:block;border-radius:var(--radius);"></div>
-        <div class="testimonial-card"><img src="prova-social-3.webp" alt="Depoimento aluna 3" loading="lazy"
-            style="width:100%;display:block;border-radius:var(--radius);"></div>
-        <div class="testimonial-card"><img src="prova-social-4.webp" alt="Depoimento aluna 4" loading="lazy"
-            style="width:100%;display:block;border-radius:var(--radius);"></div>
-        <div class="testimonial-card"><img src="prova-social-5.webp" alt="Depoimento aluna 5" loading="lazy"
-            style="width:100%;display:block;border-radius:var(--radius);"></div>
-        <div class="testimonial-card"><img src="prova-social-6.webp" alt="Depoimento aluna 6" loading="lazy"
-            style="width:100%;display:block;border-radius:var(--radius);"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ BÔNUS ━━━━━ -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Receba Ainda <span>+3 Bônus Exclusivos:</span></h2>
-      <div class="section-divider"></div>
-
-      <div class="bonus-grid">
-
-        <div class="bonus-card">
-          <span class="bonus-card-tag">GRÁTIS HOJE</span>
-          <img src="smoothies-detox-20-receitas.webp" alt="Bônus 1: Smoothies Detox — 20 Receitas" loading="lazy"
-            width="300" height="225">
-          <div class="bonus-card-body">
-            <p class="bonus-card-title">Smoothies Detox — 20 Receitas</p>
-            <p class="bonus-original">Valor: <span class="strikethrough">R$14,99</span></p>
-          </div>
-        </div>
-
-        <div class="bonus-card">
-          <span class="bonus-card-tag">GRÁTIS HOJE</span>
-          <img src="shots-matinais-5-receitas.webp" alt="Bônus 2: Shots Matinais — 5 Receitas" loading="lazy"
-            width="300" height="225">
-          <div class="bonus-card-body">
-            <p class="bonus-card-title">Shots Matinais — 5 Receitas</p>
-            <p class="bonus-original">Valor: <span class="strikethrough">R$19,90</span></p>
-          </div>
-        </div>
-
-        <div class="bonus-card">
-          <span class="bonus-card-tag">GRÁTIS HOJE</span>
-          <img src="aguas-saborizadas-15-receitas.webp" alt="Bônus 3: Águas Saborizadas — 15 Receitas" loading="lazy"
-            width="300" height="225">
-          <div class="bonus-card-body">
-            <p class="bonus-card-title">Águas Saborizadas — 15 Receitas</p>
-            <p class="bonus-original">Valor: <span class="strikethrough">R$24,90</span></p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ PRICING ━━━━━ -->
-  <section class="pricing-section" id="pricing">
-    <div class="container">
-
-      <div class="offer-card">
-
-        <!-- 1. TIMER NO TOPO DO CARD -->
-        <div class="offer-timer-bar">
-          <span class="offer-timer-label">⏰ Oferta expira em:</span>
-          <span class="offer-timer-display" id="offer-cd">23:59:59</span>
-        </div>
-
-        <div class="offer-card-body">
-
-          <!-- MOCKUP DO PRODUTO -->
-          <div style="text-align:center; margin-bottom:20px;">
-            <img src="mockup.webp" alt="Saladas no Pote — Mockup do Produto" loading="lazy" width="320" height="240"
-              style="max-width:320px; width:100%; border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.40); display:inline-block;">
-          </div>
-
-          <!-- 2. TÍTULO -->
-          <h2 class="offer-card-title">Tudo Isso Por Menos de <span style="color:#FFD700;">R$0,50 Por Receita</span>
-          </h2>
-
-          <!-- 3. STACK DE VALOR -->
-          <div class="value-stack">
-            <div class="value-row">
-              <span class="value-row-left">
-                <span class="value-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                    stroke-width="3" stroke-linecap="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg></span>
-                60 Receitas de Saladas no Pote
-              </span>
-              <span class="val">R$ 90,00</span>
-            </div>
-            <div class="value-row">
-              <span class="value-row-left">
-                <span class="value-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                    stroke-width="3" stroke-linecap="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg></span>
-                60 Receitas de Molhos Caseiros
-              </span>
-              <span class="val">R$ 48,00</span>
-            </div>
-            <div class="value-row">
-              <span class="value-row-left">
-                <span class="value-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                    stroke-width="3" stroke-linecap="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg></span>
-                Método das Camadas (conserva 7 dias)
-              </span>
-              <span class="val">R$ 47,00</span>
-            </div>
-            <div class="value-row">
-              <span class="value-row-left">
-                <span class="value-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                    stroke-width="3" stroke-linecap="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg></span>
-                <strong style="color:#FFD700;">BÔNUS:</strong>&nbsp;20 Smoothies Detox
-              </span>
-              <span class="val">R$ 14,99</span>
-            </div>
-            <div class="value-row">
-              <span class="value-row-left">
-                <span class="value-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                    stroke-width="3" stroke-linecap="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg></span>
-                <strong style="color:#FFD700;">BÔNUS:</strong>&nbsp;5 Shots Matinais
-              </span>
-              <span class="val">R$ 19,90</span>
-            </div>
-            <div class="value-row">
-              <span class="value-row-left">
-                <span class="value-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                    stroke-width="3" stroke-linecap="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg></span>
-                <strong style="color:#FFD700;">BÔNUS:</strong>&nbsp;15 Águas Saborizadas
-              </span>
-              <span class="val">R$ 24,90</span>
-            </div>
-            <div class="value-row total-row">
-              <span class="value-row-left">VALOR TOTAL DE TUDO</span>
-              <span class="val">R$ 244,79</span>
-            </div>
-          </div>
-
-          <!-- 4. BADGE DE DESCONTO -->
-          <div class="offer-discount-badge">
-            <span>🔥 88% DE DESCONTO</span>
-          </div>
-
-          <!-- 5. BLOCO DE PREÇO -->
-          <div class="price-block">
-            <p class="price-from-text">De <s>R$244,79</s> por apenas</p>
-            <div class="price-main-value"><sup>R$</sup>14<span style="font-size:42px;">,99</span></div>
-            <p class="price-installment-text">ou 3x de <strong>R$5,66</strong> <em>sem juros</em></p>
-          </div>
-
-          <!-- 6. BOTÃO CTA -->
-          <a href="https://pay.cakto.com.br/yqj9k4a_829932" class="offer-cta" onclick="fbq('track','InitiateCheckout')">
-            QUERO MINHAS RECEITAS AGORA!
-          </a>
-
-          <!-- 7. MICRO-COPY -->
-          <p class="offer-microcopy">⚡ Acesso liberado em menos de 2 minutos</p>
-
-          <!-- 8. TRUST BADGES -->
-          <div class="trust-icons">
-            <span class="trust-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" />
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-              </svg>
-              🔒 Compra 100% Segura
-            </span>
-            <span class="trust-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-              ✓ 7 Dias de Garantia
-            </span>
-            <span class="trust-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-              </svg>
-              ⚡ Acesso Imediato
-            </span>
-          </div>
-
-          <!-- 9. BANDEIRAS DE PAGAMENTO -->
-          <div class="payment-logos">
-            <div class="pay-logo">
-              <svg height="20" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="32" rx="4" fill="transparent" />
-                <circle cx="18" cy="16" r="10" fill="#fff" opacity="0.9" />
-                <circle cx="30" cy="16" r="10" fill="#fff" opacity="0.6" />
-              </svg>
-              <span class="pay-logo-text" style="margin-left:4px;">Mastercard</span>
-            </div>
-            <div class="pay-logo">
-              <span class="pay-logo-text" style="font-style:italic; font-size:16px; color:#fff;">VISA</span>
-            </div>
-            <div class="pay-logo">
-              <span class="pay-logo-text">PIX</span>
-            </div>
-            <div class="pay-logo">
-              <span class="pay-logo-text">BOLETO</span>
-            </div>
-          </div>
-
-          <!-- 10. QUEBRA DE OBJEÇÃO -->
-          <p class="offer-objection">"Por que só R$14,99? Porque quero que o máximo de mulheres tenha acesso a esse
-            método que transformou minha alimentação."</p>
-
-        </div><!-- /offer-card-body -->
-      </div><!-- /offer-card -->
-
-    </div>
-  </section>
-
-  <!-- ━━━━━ GARANTIA ━━━━━ -->
-  <section class="section">
-    <div class="container">
-      <div class="guarantee-inner">
-        <div class="guarantee-seal">
-          <span class="guarantee-seal-num">7</span>
-          <span class="guarantee-seal-days">Dias</span>
-          <span class="guarantee-seal-text">Garantia</span>
-        </div>
-        <div class="guarantee-text">
-          <h2>Garantia Incondicional de 7 Dias</h2>
-          <p>Você tem 7 dias para testar todas as receitas. Se não gostar por qualquer motivo, é só pedir o reembolso e
-            devolvemos <strong>100% do valor investido</strong>. Sem perguntas, sem burocracia. O risco é todo nosso.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ FAQ ━━━━━ -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Dúvidas <span>Frequentes</span></h2>
-      <div class="section-divider"></div>
-
-      <div class="faq-list">
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Como recebo minhas receitas?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Assim que o pagamento for confirmado, você recebe acesso imediato pelo WhatsApp e por
-            e-mail com todas as 60 receitas de saladas, os molhos irresistíveis e todos os bônus. Tudo disponível para
-            você baixar e começar a usar no mesmo instante.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Preciso de potes especiais?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Não precisa! Qualquer pote que você já tem em casa funciona perfeitamente. Pode ser de
-            plástico, de vidro, grande ou pequeno. O importante é que feche bem.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Quanto tempo dura a salada no pote?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Quando montada corretamente seguindo o método das camadas, a salada dura de 5 a 7 dias
-            fresquinha na geladeira.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Posso montar todas no fim de semana?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Sim! A maioria das alunas prepara no sábado ou domingo as saladas da semana inteira em
-            cerca de 30 minutos.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Posso vender as saladas?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Pode sim! Muitas alunas usam as receitas para vender e gerar renda extra. Saladas no
-            pote são vendidas entre R$11 e R$16 por unidade.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            As receitas são fáceis de fazer?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Super fáceis! Todas têm instruções claras e passo a passo simples. Se você sabe picar,
-            misturar e temperar, você consegue fazer.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Os ingredientes são fáceis de encontrar?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Sim! Todas as receitas usam ingredientes simples que você encontra em qualquer
-            supermercado ou feira.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">
-            Preciso de utensílios específicos?
-            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </div>
-          <div class="faq-answer">Não. Você só precisa de potes, colheres, faca e tábua de corte. Nada de equipamentos
-            caros.</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ━━━━━ CTA FINAL ━━━━━ -->
-  <section class="cta-final">
-    <div class="container">
-      <h2>Não Perca Mais Tempo Jogando Salada Fora</h2>
-      <p>Daqui a 30 minutos você pode ter a semana inteira de alimentação saudável resolvida. Sem stress, sem
-        desperdício, sem monotonia.</p>
-
-      <div class="countdown-wrap" style="margin-bottom:24px;">
-        <span class="countdown-label">Oferta expira em:</span>
-        <div class="countdown-blocks">
-          <div class="cd-block">
-            <span class="cd-num" id="cd-h2">00</span>
-            <span class="cd-label">horas</span>
-          </div>
-          <span class="cd-sep">:</span>
-          <div class="cd-block">
-            <span class="cd-num" id="cd-m2">10</span>
-            <span class="cd-label">min</span>
-          </div>
-          <span class="cd-sep">:</span>
-          <div class="cd-block">
-            <span class="cd-num" id="cd-s2">00</span>
-            <span class="cd-label">seg</span>
-          </div>
-        </div>
-      </div>
-
-      <a href="https://pay.cakto.com.br/yqj9k4a_829932" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
-        QUERO COMEÇAR AGORA POR R$14,99
-      </a>
-      <p class="btn-sub" style="color:rgba(255,255,255,0.7); margin-top:12px;">🔒 Pagamento Seguro &nbsp;|&nbsp; Acesso
-        Imediato &nbsp;|&nbsp; Garantia de 7 Dias</p>
-    </div>
-  </section>
-
-  <!-- ━━━━━ FOOTER ━━━━━ -->
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <a href="#">Termos de Uso</a>
-        <a href="#">Política de Privacidade</a>
-        <a href="mailto:contato@nutriliacastro.com">contato@nutriliacastro.com</a>
-      </div>
-      <p>© 2024 Nutri Marina Albuquerque — Todos os direitos reservados</p>
-      <p style="margin-top:8px; font-size:11px;">Este produto é um e-book digital. Os resultados podem variar de pessoa
-        para pessoa.</p>
-    </div>
-  </footer>
-
-  <!-- ━━━━━ STICKY CTA (mobile) ━━━━━ -->
-  <div class="sticky-cta">
-    <a href="https://pay.cakto.com.br/yqj9k4a_829932" class="btn-cta" onclick="fbq('track','InitiateCheckout')">
-      QUERO MINHAS RECEITAS
-    </a>
   </div>
+</section>
 
-  <!-- ━━━━━ SCRIPTS ━━━━━ -->
-  <script>
-    /* ── Countdown (24h reset por sessão) ── */
-    (function () {
-      var KEY = 'saladasPoteExpiry';
-      var DURATION = 10 * 60 * 1000; // 10min em ms
+<!-- ━━━ DOR ━━━ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="stitle">Isso <span>acontece com você?</span></h2>
+    <div class="sdivider"></div>
+    <ul class="pain-list">
+      <li><span class="pain-x">✕</span> Compra salada e ela estraga antes de usar</li>
+      <li><span class="pain-x">✕</span> Preguiça de lavar, cortar e temperar todo santo dia</li>
+      <li><span class="pain-x">✕</span> Come sempre a mesma salada sem graça</li>
+      <li><span class="pain-x">✕</span> Quer emagrecer mas não tem tempo pra cozinhar</li>
+      <li><span class="pain-x">✕</span> Já tentou meal prep mas desistiu por ser complicado</li>
+    </ul>
+    <p class="pain-transition">Se marcou pelo menos 2... a solução está aqui embaixo 👇</p>
+  </div>
+</section>
 
-      var expiry = sessionStorage.getItem(KEY);
-      if (!expiry) {
-        expiry = Date.now() + DURATION;
-        sessionStorage.setItem(KEY, expiry);
-      } else {
-        expiry = parseInt(expiry, 10);
-        if (expiry < Date.now()) {
-          expiry = Date.now() + DURATION;
-          sessionStorage.setItem(KEY, expiry);
-        }
-      }
+<!-- ━━━ SOLUÇÃO ━━━ -->
+<section class="section">
+  <div class="container">
+    <h2 class="stitle">A Solução: <span>Saladas no Pote + Molhos Irresistíveis</span></h2>
+    <div class="sdivider"></div>
+    <p class="sdesc">O método pra preparar TODAS as saladas da semana em 30 minutos — frescas até sexta-feira, sem monotonia, sem desperdício.</p>
 
-      function pad(n) { return n < 10 ? '0' + n : n; }
+    <div style="display:flex;flex-direction:column;align-items:center;gap:24px">
+      <img src="oque-vc-vai-encontrar.webp" alt="O que você vai encontrar" loading="lazy" style="max-width:360px;border-radius:16px;box-shadow:var(--shadow-lg)">
+      <ul class="benefit-grid">
+        <li><span class="bcheck">✓</span> Funciona com qualquer pote</li>
+        <li><span class="bcheck">✓</span> 60 receitas diferentes</li>
+        <li><span class="bcheck">✓</span> Molhos que transformam o sabor</li>
+        <li><span class="bcheck">✓</span> Conserva 5–7 dias</li>
+        <li><span class="bcheck">✓</span> Passo a passo direto</li>
+        <li><span class="bcheck">✓</span> Ingredientes de mercado</li>
+      </ul>
+    </div>
 
-      function tick() {
-        var diff = Math.max(0, expiry - Date.now());
-        var h = Math.floor(diff / 3600000);
-        var m = Math.floor((diff % 3600000) / 60000);
-        var s = Math.floor((diff % 60000) / 1000);
 
-        var hs = pad(h), ms = pad(m), ss = pad(s);
+  </div>
+</section>
 
-        ['cd-h', 'cd-h2'].forEach(function (id) {
-          var el = document.getElementById(id);
-          if (el) el.textContent = hs;
-        });
-        ['cd-m', 'cd-m2'].forEach(function (id) {
-          var el = document.getElementById(id);
-          if (el) el.textContent = ms;
-        });
-        ['cd-s', 'cd-s2'].forEach(function (id) {
-          var el = document.getElementById(id);
-          if (el) el.textContent = ss;
-        });
+<!-- ━━━ RECEITAS (vertical) ━━━ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="stitle">Algumas Saladas Que Você Vai <span>Aprender:</span></h2>
+    <div class="sdivider"></div>
+    <div class="recipe-list">
+      <div class="recipe-item">
+        <img src="salada-refrescante-molho-citrico.png" alt="Salada Refrescante" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Refrescante + Molho Cítrico</p>
+          <div class="recipe-tags"><span class="recipe-tag">100 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-item">
+        <img src="salada-caprese.png" alt="Salada Caprese" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Caprese</p>
+          <div class="recipe-tags"><span class="recipe-tag">120 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-item">
+        <img src="salada-caesar-molho-original.png" alt="Salada Caesar" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Caesar + Molho Original</p>
+          <div class="recipe-tags"><span class="recipe-tag">115 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-item">
+        <img src="salada-big-mac-molho-especial.png" alt="Salada Big Mac" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Big Mac + Molho Especial</p>
+          <div class="recipe-tags"><span class="recipe-tag">180 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-item">
+        <img src="salada-mediterranea-molho-agridoce.png" alt="Salada Mediterrânea" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Mediterrânea + Molho Agridoce</p>
+          <div class="recipe-tags"><span class="recipe-tag">120 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-item">
+        <img src="salada-toscana-molho-siciliano.png" alt="Salada Toscana" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Toscana + Molho Siciliano</p>
+          <div class="recipe-tags"><span class="recipe-tag">130 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-item">
+        <img src="salada-rustica-mostarda-e-mel.png" alt="Salada Rústica" loading="lazy">
+        <div class="recipe-info">
+          <p class="recipe-name">Salada Rústica + Mostarda e Mel</p>
+          <div class="recipe-tags"><span class="recipe-tag">160 kcal</span><span class="recipe-tag">Dura 7 dias</span></div>
+        </div>
+      </div>
+      <div class="recipe-more">
+        <p>+53</p>
+        <p>receitas exclusivas te esperando!</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Card offer timer: HH:MM:SS format
-        var offerCd = document.getElementById('offer-cd');
-        if (offerCd) {
-          offerCd.textContent = hs + ':' + ms + ':' + ss;
-          // Pulse quando < 1 hora
-          if (h < 1) {
-            offerCd.classList.add('urgent');
-          } else {
-            offerCd.classList.remove('urgent');
-          }
-        }
-      }
+<!-- ━━━ AUTORIDADE ━━━ -->
+<section class="section">
+  <div class="container">
+    <div class="auth-inner">
+      <img src="marina.png" alt="Marina Albuquerque" class="auth-photo" loading="lazy" width="140" height="140">
+      <div class="auth-text">
+        <h2>Quem é Marina Albuquerque?</h2>
+        <p>Minhas receitas de Saladas no Pote sempre fizeram sucesso na internet. Resolvi reunir as 60 melhores em um único lugar pra compartilhar com você também.</p>
+        <div class="auth-stats">
+          <div><div class="stat-n">10.000+</div><div class="stat-l">alunas satisfeitas</div></div>
+          <div><div class="stat-n">60</div><div class="stat-l">receitas exclusivas</div></div>
+          <div><div class="stat-n">7 dias</div><div class="stat-l">de conservação</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      tick();
-      setInterval(tick, 1000);
-    })();
+<!-- ━━━ DEPOIMENTOS ━━━ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="stitle">Veja o Que Nossas <span>Alunas Dizem:</span></h2>
+    <div class="sdivider"></div>
+    <div class="test-grid">
+      <div><img src="prova-social-1.webp" alt="Depoimento 1" loading="lazy"></div>
+      <div><img src="prova-social-2.webp" alt="Depoimento 2" loading="lazy"></div>
+      <div><img src="prova-social-3.webp" alt="Depoimento 3" loading="lazy"></div>
+      <div><img src="prova-social-4.webp" alt="Depoimento 4" loading="lazy"></div>
+      <div><img src="prova-social-5.webp" alt="Depoimento 5" loading="lazy"></div>
+      <div><img src="prova-social-6.webp" alt="Depoimento 6" loading="lazy"></div>
+    </div>
+  </div>
+</section>
 
-    /* ── FAQ accordion ── */
-    function toggleFaq(el) {
-      var item = el.parentElement;
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function (i) {
-        i.classList.remove('open');
-      });
-      if (!isOpen) item.classList.add('open');
-    }
+<!-- ━━━ BÔNUS ━━━ -->
+<section class="section">
+  <div class="container">
+    <h2 class="stitle">🎁 Receba Ainda <span>+3 Bônus Exclusivos:</span></h2>
+    <div class="sdivider"></div>
+    <div class="bonus-grid">
+      <div class="bonus-card"><span class="bonus-card-tag">GRÁTIS</span><img src="smoothies-detox-20-receitas.webp" alt="Smoothies Detox" loading="lazy" width="300" height="225"><div class="bonus-card-body"><p class="bonus-title">Smoothies Detox — 20 Receitas</p><p class="bonus-val">Valor: <s>R$14,99</s></p></div></div>
+      <div class="bonus-card"><span class="bonus-card-tag">GRÁTIS</span><img src="shots-matinais-5-receitas.webp" alt="Shots Matinais" loading="lazy" width="300" height="225"><div class="bonus-card-body"><p class="bonus-title">Shots Matinais — 5 Receitas</p><p class="bonus-val">Valor: <s>R$19,90</s></p></div></div>
+      <div class="bonus-card"><span class="bonus-card-tag">GRÁTIS</span><img src="aguas-saborizadas-15-receitas.webp" alt="Águas Saborizadas" loading="lazy" width="300" height="225"><div class="bonus-card-body"><p class="bonus-title">Águas Saborizadas — 15 Receitas</p><p class="bonus-val">Valor: <s>R$24,90</s></p></div></div>
+    </div>
+  </div>
+</section>
 
-    /* ── UTM preservation ── */
-    (function () {
-      var params = new URLSearchParams(window.location.search);
-      var utms = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src'];
-      var pairs = [];
-      utms.forEach(function (k) {
-        var v = params.get(k);
-        if (v) pairs.push(k + '=' + encodeURIComponent(v));
-      });
-      if (!pairs.length) return;
-      var suffix = pairs.join('&');
-      document.querySelectorAll('a[href*="cakto.com.br"]').forEach(function (a) {
-        a.href += (a.href.indexOf('?') === -1 ? '?' : '&') + suffix;
-      });
-    })();
+<!-- ━━━ PRICING ━━━ -->
+<section class="section section-alt" id="pricing">
+  <div class="container">
+    <div class="offer-card">
+      <div class="offer-header">🥗 Oferta Especial — Acesso Imediato</div>
+      <div class="offer-body">
+        <div style="text-align:center;margin-bottom:20px">
+          <img src="mockup.webp" alt="Produto" loading="lazy" width="320" height="240" style="max-width:280px;width:100%;border-radius:12px;box-shadow:var(--shadow-lg);display:inline-block">
+        </div>
+        <h2 style="font-size:clamp(18px,4vw,22px);font-weight:800;color:var(--text);text-align:center;margin-bottom:20px">Tudo Isso Por Menos de <span style="color:var(--accent)">R$0,17 Por Receita</span></h2>
+        <div class="value-stack">
+          <div class="vrow"><span>✅ 60 Receitas de Saladas no Pote</span><span class="val">R$ 90,00</span></div>
+          <div class="vrow"><span>✅ 60 Receitas de Molhos Caseiros</span><span class="val">R$ 48,00</span></div>
+          <div class="vrow"><span>✅ Método das Camadas (conserva 7 dias)</span><span class="val">R$ 47,00</span></div>
+          <div class="vrow"><span>🎁 BÔNUS: 20 Smoothies Detox</span><span class="val">R$ 14,99</span></div>
+          <div class="vrow"><span>🎁 BÔNUS: 5 Shots Matinais</span><span class="val">R$ 19,90</span></div>
+          <div class="vrow"><span>🎁 BÔNUS: 15 Águas Saborizadas</span><span class="val">R$ 24,90</span></div>
+          <div class="vrow total"><span>VALOR TOTAL</span><span class="val">R$ 97,00</span></div>
+        </div>
+        <div class="discount-badge"><span>🔥 89% DE DESCONTO</span></div>
+        <div class="price-block">
+          <p class="price-from">De <s>R$97,00</s> por apenas</p>
+          <div class="price-big"><sup>R$</sup>10<span style="font-size:42px">,00</span></div>
+          <p class="price-installment">ou 3x de <strong>R$3,33</strong> <em>sem juros</em></p>
+        </div>
+        <a href="https://pay.cakto.com.br/yqj9k4a_829932" class="offer-cta" onclick="fbq('track','InitiateCheckout')">GARANTIR MINHAS RECEITAS AGORA!</a>
+        <p class="offer-micro">⚡ Acesso liberado em menos de 2 minutos</p>
+        <div class="trust-row">
+          <span class="trust-item">🔒 Compra 100% Segura</span>
+          <span class="trust-item">✓ 7 Dias de Garantia</span>
+          <span class="trust-item">⚡ Acesso Imediato</span>
+        </div>
+        <div class="pay-row">
+          <span class="pay-logo">Mastercard</span>
+          <span class="pay-logo">VISA</span>
+          <span class="pay-logo">PIX</span>
+          <span class="pay-logo">BOLETO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    /* ── Sticky CTA: hide while hero is visible ── */
-    (function () {
-      var sticky = document.querySelector('.sticky-cta');
-      if (!sticky) return;
-      var hero = document.querySelector('.hero');
-      var observer = new IntersectionObserver(function (entries) {
-        sticky.style.display = entries[0].isIntersecting ? 'none' : 'block';
-      }, { threshold: 0.1 });
-      observer.observe(hero);
-    })();
-  </script>
+<!-- ━━━ GARANTIA ━━━ -->
+<section class="section">
+  <div class="container">
+    <div class="guarantee">
+      <div class="guarantee-seal"><span class="num">7</span><span class="lbl">Dias</span><span style="font-size:9px;text-transform:uppercase;letter-spacing:1px;opacity:.8">Garantia</span></div>
+      <div>
+        <h2 class="stitle" style="margin-bottom:12px">Garantia <span>Incondicional</span> de 7 Dias</h2>
+        <p>Teste todas as receitas. Se não gostar por qualquer motivo, devolvemos <strong style="color:var(--text)">100% do valor</strong>. Sem perguntas. Sem burocracia. O risco é todo nosso.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- ━━━━━ BOTÃO WHATSAPP FLUTUANTE ━━━━━ -->
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      animation: wpp-pulse 2.5s ease-in-out infinite;
-    }
-    .whatsapp-float .wpp-label {
-      background: #fff;
-      color: #1a1a1a;
-      font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      padding: 8px 14px;
-      border-radius: 20px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-      white-space: nowrap;
-    }
-    .whatsapp-float .wpp-icon {
-      width: 56px;
-      height: 56px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 16px rgba(37,211,102,0.5);
-      flex-shrink: 0;
-    }
-    .whatsapp-float .wpp-icon svg {
-      width: 30px;
-      height: 30px;
-      fill: #fff;
-    }
-    @keyframes wpp-pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.06); }
-    }
-    @media (max-width: 640px) {
-      .whatsapp-float { bottom: 72px; right: 14px; }
-      .whatsapp-float .wpp-label { font-size: 12px; padding: 7px 11px; }
-      .whatsapp-float .wpp-icon { width: 50px; height: 50px; }
-    }
-  </style>
+<!-- ━━━ FAQ ━━━ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="stitle">Dúvidas <span>Frequentes</span></h2>
+    <div class="sdivider"></div>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Como recebo minhas receitas?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a">Assim que o pagamento for confirmado, você recebe acesso imediato pelo WhatsApp e e-mail com todas as 60 receitas, molhos e bônus.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Preciso de potes especiais?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a">Não! Qualquer pote que você já tem em casa funciona. Pode ser de plástico, vidro, grande ou pequeno.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quanto tempo dura a salada no pote?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a">Seguindo o método das camadas, a salada dura de 5 a 7 dias fresquinha na geladeira.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Posso montar todas no fim de semana?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a">Sim! A maioria das alunas prepara no domingo as saladas da semana inteira em cerca de 30 minutos.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Posso vender as saladas?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a">Pode sim! Muitas alunas vendem entre R$11 e R$16 por unidade e geram renda extra.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">As receitas são fáceis?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a">Super fáceis! Se você sabe picar, misturar e temperar, você consegue fazer.</div></div>
+    </div>
+  </div>
+</section>
 
-  <a class="whatsapp-float"
-     href="https://wa.me/5527998434186?text=Ol%C3%A1%2C+gostaria+de+tirar+algumas+d%C3%BAvidas+sobre+o+Saladas+no+Pote+%F0%9F%A5%97"
-     target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
-    <span class="wpp-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.25-1.44l-.38-.22-3.67.96.98-3.58-.25-.4A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.44-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51H6.8c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.35z"/>
-      </svg>
-    </span>
-  </a>
+<!-- ━━━ CTA FINAL ━━━ -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Pare de Jogar Salada Fora e Comece a Comer Bem <span style="color:var(--accent)">Hoje Mesmo</span></h2>
+    <p>Daqui a 30 minutos você pode ter a semana inteira resolvida. Sem stress. Sem desperdício. Por apenas <strong style="color:var(--accent)">R$10,00</strong>.</p>
+    <a href="https://pay.cakto.com.br/yqj9k4a_829932" class="btn-cta" onclick="fbq('track','InitiateCheckout')">QUERO COMEÇAR AGORA POR R$10,00</a>
+    <p class="btn-sub">🔒 Pagamento Seguro · Acesso Imediato · Garantia 7 Dias</p>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="flinks"><a href="#">Termos de Uso</a><a href="#">Política de Privacidade</a><a href="mailto:contato@nutriliacastro.com">contato@nutriliacastro.com</a></div>
+    <p>© 2024 Nutri Marina Albuquerque — Todos os direitos reservados</p>
+    <p style="margin-top:6px;font-size:11px">Este produto é um e-book digital. Os resultados podem variar.</p>
+  </div>
+</footer>
+
+
+
+<!-- WHATSAPP -->
+<a class="wpp-float" href="https://wa.me/5527998434186?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+o+Saladas+no+Pote+%F0%9F%A5%97" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <span class="wpp-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.25-1.44l-.38-.22-3.67.96.98-3.58-.25-.4A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.44-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51H6.8c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg></span>
+</a>
+
+<script>
+function toggleFaq(el){var item=el.parentElement;var open=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open')});if(!open)item.classList.add('open')}
+
+(function(){
+  var p=new URLSearchParams(window.location.search),utms=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src'],pairs=[];
+  utms.forEach(function(k){var v=p.get(k);if(v)pairs.push(k+'='+encodeURIComponent(v))});
+  if(!pairs.length)return;var s=pairs.join('&');
+  document.querySelectorAll('a[href*="cakto.com.br"]').forEach(function(a){a.href+=(a.href.indexOf('?')===-1?'?':'&')+s});
+})();
+
+
+</script>
 </body>
-
 </html>
