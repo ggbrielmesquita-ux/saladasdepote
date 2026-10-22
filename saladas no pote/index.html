@@ -7,6 +7,7 @@
   <title>Saladas Criativas + Molhos | 60+ Receitas Práticas</title>
   <meta name="description" content="Receitas de saladas criativas e molhos caseiros para variar suas refeições, organizar a semana e preparar opções práticas em casa.">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://saladasdepote.com.br/">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
   <link rel="icon" type="image/x-icon" sizes="32x32 48x48" href="favicon.ico">
@@ -86,6 +87,7 @@
   <link rel="stylesheet" href="styles/design-system.css">
   <link rel="stylesheet" href="styles/sections.css">
   <script src="scripts/carousel.js" defer></script>
+  <script src="scripts/lesson-preview.js" defer></script>
 </head>
 <body>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1809981600129982&amp;ev=PageView&amp;noscript=1" alt=""/></noscript>
@@ -290,13 +292,18 @@
       <h2 class="stitle" id="lesson-preview-title">Assista à prévia da aula 1</h2>
       <div class="sdivider" aria-hidden="true"></div>
       <div class="lesson-preview-video">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/2-A2chrN41w?controls=1&amp;playsinline=1&amp;rel=0"
+        <iframe id="lesson-preview-player"
+          data-youtube-src="https://www.youtube-nocookie.com/embed/2-A2chrN41w?controls=1&amp;playsinline=1&amp;rel=0"
           title="Prévia da aula 1 — Saladas Criativas + Molhos"
           width="360" height="640" loading="lazy"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen></iframe>
+          allowfullscreen hidden></iframe>
+        <div class="lesson-preview-alternative" data-video-alternative role="status">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <p>Assista à prévia da aula 1 diretamente no YouTube.</p>
+          <a class="button" href="https://www.youtube.com/shorts/2-A2chrN41w" target="_blank" rel="noopener">ASSISTIR NO YOUTUBE</a>
+        </div>
       </div>
       <p class="lesson-preview-fallback"><a href="https://www.youtube.com/shorts/2-A2chrN41w" target="_blank" rel="noopener noreferrer">Assistir no YouTube</a></p>
     </div>

@@ -53,6 +53,7 @@ async function start() {
       const etag = `"${stat.size.toString(16)}-${Math.trunc(stat.mtimeMs).toString(16)}${gzip ? '-gzip' : ''}"`;
       const headers = {
         'Content-Type': type, 'X-Content-Type-Options': 'nosniff',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
         'Cache-Control': production && status === 200 ? (/image\//.test(type) ? 'public, max-age=86400' : 'public, max-age=0, must-revalidate') : 'no-store',
         'Last-Modified': stat.mtime.toUTCString(), ETag: etag, Vary: 'Accept-Encoding',
       };

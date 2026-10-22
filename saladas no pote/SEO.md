@@ -37,6 +37,16 @@ O JSON-LD descreve `WebSite`, `WebPage` e `Product` com `Offer` de **19.90 BRL**
 
 O card **“Assista à prévia da aula 1”** fica imediatamente antes dos bônus, depois dos depoimentos. Incorpora o vídeo fornecido `2-A2chrN41w` pelo domínio `youtube-nocookie.com`, em proporção 9:16, com carregamento lazy, controles do YouTube, fullscreen e link externo alternativo. Não usa autoplay. Carregamento e reprodução foram verificados no navegador.
 
+### Compatibilidade do player / erro 153
+
+O YouTube exige identificação do incorporador. O erro 153 indica ausência de Referer ou identificação equivalente; não indica, por si só, que o proprietário proibiu a incorporação. [Documentação oficial do erro](https://developers.google.com/youtube/iframe_api_reference#onError).
+
+O projeto configura `strict-origin-when-cross-origin` no meta referrer, no atributo do iframe e no header do servidor local. `scripts/lesson-preview.js` adiciona `origin` com **a origem real da página**, inclusive protocolo e porta de localhost, sem enviar parâmetros de campanha e sem fingir que a prévia está no domínio de produção. A IFrame API observa os erros: quando o player falha, o card oferece um botão para abrir o vídeo no YouTube. O link externo abaixo do player também continua disponível. [Identificação do incorporador](https://developers.google.com/youtube/terms/required-minimum-functionality#api-client-identity-and-credentials).
+
+Em `file://` ou com JavaScript desativado, o card oferece a alternativa externa em vez de carregar um player sem identificação. Para testar a incorporação, abra `http://127.0.0.1:5173/` usando `npm run dev`. Se uma WebView ou bloqueador impedir o envio de Referer, a página não pode obrigar o navegador a enviá-lo; o botão externo continua utilizável.
+
+Na verificação local, o documento do YouTube recebeu `http://127.0.0.1:5173/` como referrer. Foram testadas a origem HTTP local, a origem HTTPS do site e a alternativa para erro 153/arquivo local. Reinicie o servidor após alterar seus headers ou adicionar novos scripts.
+
 ## Imagens e desempenho
 
 Os 23 arquivos de imagem únicos antes referenciados pela página somavam **24.702.577 bytes**. As referências `src` de fallback atuais somam **1.549.298 bytes**, redução de **93,7%**, sem incluir o vídeo, fontes, pixels e a imagem social. O navegador escolhe variantes adicionais por `srcset` conforme largura e densidade de tela; estes números medem arquivos, não uma pontuação de carregamento.

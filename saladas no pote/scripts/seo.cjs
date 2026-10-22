@@ -68,6 +68,7 @@ function metadata(page, html) {
     `  <title>${escapeHtml(page.title)}</title>`,
     named('description', page.description),
     named('robots', 'index, follow, max-image-preview:large'),
+    named('referrer', 'strict-origin-when-cross-origin'),
     `  <link rel="canonical" href="${escapeHtml(absolute(page.path))}">`,
     '  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">',
     '  <link rel="icon" type="image/x-icon" sizes="32x32 48x48" href="favicon.ico">',
