@@ -22,8 +22,8 @@ function prepareImages() {
         variants = variants.filter(item => item.width >= 420);
         sizes = '(min-width: 480px) 462px, calc(100vw - 42px)';
       } else if (recipe) {
-        variants = variants.filter(item => item.width <= 384);
-        sizes = '(min-width: 576px) 96px, 80px';
+        variants = variants.filter(item => item.width <= 420);
+        sizes = '(min-width: 960px) 264px, (min-width: 768px) calc((100vw - 160px) / 3), (min-width: 576px) calc((100vw - 112px) / 2), calc((100vw - 88px) / 2)';
       } else if (/auth-photo/.test(image)) sizes = '140px';
       else if (/offer-product/.test(image)) sizes = '280px';
       else if (/solution-image/.test(image)) sizes = '(min-width: 960px) 400px, (min-width: 768px) 42vw, calc(100vw - 82px)';
@@ -35,7 +35,7 @@ function prepareImages() {
     if (!dimensions) return image;
     image = image.replace(/\s(?:width|height|decoding|srcset|sizes)="[^"]*"/g, '');
     if (variants?.length) {
-      const fallback = variants.find(item => item.width >= (recipe ? 192 : /hero-banner/.test(image) ? 840 : 560)) || variants.at(-1);
+      const fallback = variants.find(item => item.width >= (recipe ? 384 : /hero-banner/.test(image) ? 840 : 560)) || variants.at(-1);
       image = image.replace(/\bsrc="[^"]+"/, `src="${fallback.src}"`);
       if (!image.includes('data-image-source=')) image = image.replace(/<img\b/, `<img data-image-source="${source}"`);
       if (variants.length > 1) image = image.replace(/>$/, ` srcset="${variants.map(item => `${item.src} ${item.width}w`).join(', ')}" sizes="${sizes}">`);
