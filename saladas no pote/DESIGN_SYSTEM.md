@@ -54,7 +54,7 @@ Conteúdo editorial, receitas, preços, bônus, depoimentos, garantia e informa�
 ## Integrações preservadas
 
 - Os dois CTAs de compra apontam para `https://pay.cakto.com.br/yqj9k4a_829932` e disparam `fbq('track','InitiateCheckout')`.
-- O Meta Pixel `902634108552382` mantém a inicialização, o evento `PageView` e o fallback `noscript`.
+- O Meta Pixel `1809981600129982` mantém a inicialização, o evento `PageView` e o fallback `noscript`.
 - Os parâmetros `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term` e `src` continuam sendo codificados e propagados aos links de checkout.
 - A interação do FAQ mantém o comportamento de somente uma pergunta aberta por vez, agora com botões nativos, acionamento por teclado, foco visível e `aria-expanded` sincronizado.
 - O link do WhatsApp, sua mensagem, o e-mail e os links de termos e privacidade são preservados.

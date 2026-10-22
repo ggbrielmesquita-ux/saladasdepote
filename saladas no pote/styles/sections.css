@@ -259,6 +259,8 @@
 .recipe-item img { width: 5rem; height: 5rem; flex-shrink: 0; border-radius: var(--radius-sm); object-fit: cover; }
 .recipe-info { flex: 1; }
 .recipe-name { margin-bottom: var(--space-2); color: var(--color-forest); font-weight: 700; line-height: 1.45; }
+/* A hierarquia semântica mantém a tipografia original dos cards. */
+.recipe-name, .bonus-title { font-family: var(--font-body); font-size: inherit; letter-spacing: normal; text-wrap: wrap; }
 .recipe-tags { display: flex; gap: var(--space-2); flex-wrap: wrap; }
 .recipe-tag { padding: var(--space-1) var(--space-2); border-radius: var(--radius-pill); background: var(--color-soft); color: var(--color-forest); font-size: var(--text-meta); font-weight: 500; }
 .recipe-more { padding: var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-card); background: var(--color-cream); text-align: center; }
@@ -276,6 +278,36 @@
 .test-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); max-width: 24rem; margin-inline: auto; }
 .test-grid > div { min-width: 0; }
 .test-grid img { width: 100%; border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-sm); }
+
+.lesson-preview-card {
+  max-width: 34rem;
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+.lesson-preview-video {
+  width: 100%;
+  max-width: 22.5rem;
+  aspect-ratio: 9 / 16;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-forest);
+}
+.lesson-preview-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+.lesson-preview-fallback { margin-top: var(--space-4); text-align: center; }
+.lesson-preview-fallback a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--color-forest);
+  font-size: var(--text-small);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 .bonus-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); max-width: 26rem; margin-inline: auto; }
 .bonus-card { position: relative; overflow: hidden; text-align: center; }

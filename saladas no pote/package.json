@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/dev-server.cjs"
+    "dev": "node scripts/dev-server.cjs",
+    "seo": "node scripts/seo.cjs",
+    "check:seo": "node scripts/seo.cjs --check",
+    "images": "node scripts/optimize-images.cjs && node scripts/prepare-images.cjs",
+    "build": "node scripts/build.cjs",
+    "preview": "node scripts/dev-server.cjs --production"
   }
 }

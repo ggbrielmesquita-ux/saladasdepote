@@ -1,0 +1,16 @@
+{
+  "siteUrl": "https://saladasdepote.com.br/",
+  "siteName": "Saladas Criativas + Molhos",
+  "language": "pt-BR",
+  "locale": "pt_BR",
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Saladas Criativas + Molhos | 60+ Receitas Práticas",
+      "description": "Receitas de saladas criativas e molhos caseiros para variar suas refeições, organizar a semana e preparar opções práticas em casa.",
+      "socialImage": "assets/social-preview.jpg",
+      "socialImageAlt": "Saladas Criativas + Molhos: apresentação da coletânea de receitas e molhos caseiros"
+    }
+  ]
+}
