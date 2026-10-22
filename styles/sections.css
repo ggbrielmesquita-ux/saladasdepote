@@ -1,24 +1,4 @@
 /* Abertura, demonstração e componentes da landing page. */
-.offer-banner {
-  padding-block: var(--space-5);
-  border-top: 3px solid var(--color-yellow);
-  background: var(--color-forest);
-  color: var(--color-white);
-}
-.offer-banner-inner { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); text-align: center; }
-.offer-banner[hidden] { display: none; }
-.offer-banner-copy { text-align: center; }
-.offer-banner-eyebrow { margin-bottom: var(--space-1); color: var(--color-yellow); font-size: .8125rem; font-weight: 700; letter-spacing: .12em; }
-.offer-banner-title { font-size: .9375rem; font-weight: 500; line-height: 1.45; }
-.offer-banner-title strong { color: var(--color-yellow); font-size: 1.125rem; white-space: nowrap; }
-.offer-banner-timer { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
-.offer-banner-timer[hidden] { display: none; }
-.offer-clock { display: flex; align-items: center; justify-content: center; gap: var(--space-3); }
-.offer-clock-unit { display: flex; flex-direction: column; align-items: center; justify-content: center; width: clamp(4.75rem, 20vw, 5.5rem); min-height: clamp(5rem, 21vw, 5.75rem); border: 1px solid var(--color-yellow); border-radius: var(--radius-sm); background: var(--color-cream); color: var(--color-forest); box-shadow: 0 5px 16px rgb(0 0 0 / 12%), inset 0 2px 0 var(--color-white); }
-.offer-clock-unit strong { font-family: var(--font-heading); font-size: clamp(2.75rem, 11vw, 3.5rem); font-weight: 800; letter-spacing: -.04em; line-height: 1.05; font-variant-numeric: tabular-nums; }
-.offer-clock-unit > span { margin-top: var(--space-1); font-size: .6875rem; font-weight: 700; letter-spacing: .12em; }
-.offer-clock-separator { color: var(--color-yellow); font-size: 2.25rem; font-weight: 700; }
-
 .hero {
   padding-bottom: var(--space-8);
   border-bottom: 1px solid #E4EBDD;
@@ -244,9 +224,9 @@
 .testimonial-carousel .carousel-slide img { width: 100%; height: 100%; object-fit: contain; }
 
 .lesson-preview-card {
-  max-width: 34rem;
+  max-width: 24rem;
   margin-inline: auto;
-  padding: clamp(1rem, 4vw, 2rem);
+  padding: var(--space-2);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-white);
@@ -277,17 +257,6 @@
 .lesson-preview-alternative svg { width: 3.5rem; height: 3.5rem; }
 .lesson-preview-alternative .button { font-size: var(--text-small); }
 .lesson-preview-video > [hidden] { display: none; }
-.lesson-preview-hint { margin-top: var(--space-4); color: var(--color-muted); font-size: var(--text-small); text-align: center; }
-.lesson-preview-fallback { margin-top: var(--space-4); text-align: center; }
-.lesson-preview-fallback a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.75rem;
-  color: var(--color-forest);
-  font-size: var(--text-small);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
 
 .bonus-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); max-width: 26rem; margin-inline: auto; }
 .bonus-card { position: relative; overflow: hidden; text-align: center; }
@@ -340,7 +309,7 @@
 .offer-expiry { display: flex; align-items: center; justify-content: center; gap: var(--space-2); margin-top: var(--space-4); padding: var(--space-3) var(--space-2); border: 1px solid #F2C9BF; border-radius: var(--radius-sm); background: #FFF0EC; color: #A62D26; font-size: .9375rem; font-weight: 700; line-height: 1.45; }
 .offer-expiry[hidden] { display: none; }
 .offer-expiry svg { flex: 0 0 1.125rem; width: 1.125rem; height: 1.125rem; }
-.offer-cta { margin-bottom: var(--space-4); }
+.offer-cta { margin-bottom: 0; }
 /* Destaque comercial: brilho externo mantém o contraste do texto branco. */
 :is(.offer-cta, .cta-final .btn-cta) {
   min-height: 4rem;
@@ -366,11 +335,6 @@
   box-shadow: inset 0 2px 0 rgb(255 255 255 / 15%), 0 1px 0 #005526, 0 0 0 3px rgb(145 220 86 / 18%), 0 5px 12px rgb(7 132 61 / 22%);
   transform: translateY(2px);
 }
-.offer-micro { margin-bottom: var(--space-5); color: var(--color-muted); font-size: var(--text-small); text-align: center; }
-.trust-row, .pay-row { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--space-2); }
-.trust-row { margin-bottom: var(--space-5); }
-.trust-item { display: flex; align-items: center; gap: var(--space-1); padding: var(--space-2) var(--space-3); border-radius: var(--radius-pill); background: var(--color-soft); color: var(--color-forest); font-size: var(--text-meta); }
-.pay-logo { padding: var(--space-1) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-muted); font-size: var(--text-small); font-weight: 600; }
 
 .guarantee {
   display: grid;

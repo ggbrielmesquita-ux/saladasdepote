@@ -3,7 +3,6 @@
 
   const frame = document.querySelector('#lesson-preview-player');
   const alternative = document.querySelector('[data-video-alternative]');
-  const hint = document.querySelector('[data-video-hint]');
   if (!frame || !alternative) return;
 
   const videoContainer = frame.parentElement;
@@ -16,13 +15,11 @@
   let manualPlaybackOnly = false;
   let pauseRequested = false;
   let finished = false;
-  let mutedFallbackTried = false;
 
   function showAlternative() {
     failed = true;
     frame.hidden = true;
     alternative.hidden = false;
-    if (hint) hint.hidden = true;
   }
 
   // file:// e WebViews sem origem HTTP não identificam o incorporador.
@@ -37,7 +34,6 @@
   frame.src = embed.href;
   frame.hidden = false;
   alternative.hidden = true;
-  if (hint) hint.hidden = false;
 
   function syncPlayback() {
     if (!ready || failed) return;
@@ -90,15 +86,9 @@
         onStateChange,
         onAutoplayBlocked() {
           if (!ready || failed) return;
-          if (!mutedFallbackTried) {
-            mutedFallbackTried = true;
-            player.mute();
-            if (hint) hint.textContent = 'O navegador iniciou sem som. Ative o áudio pelos controles do vídeo.';
-            if (inView && !document.hidden && !finished && !manualPlaybackOnly && !pauseRequested) player.playVideo();
-            return;
-          }
           manualPlaybackOnly = true;
-          if (hint) hint.textContent = 'Toque no play do vídeo para começar aqui mesmo.';
+          player.setVolume(100);
+          player.unMute();
         },
         // O YouTube informa 153 quando a identificação é bloqueada pelo ambiente.
         // Evita deixar o visitante preso na tela de erro do player.
