@@ -89,7 +89,8 @@ async function createVariant(sourcePath, basename, width, originalBytes) {
 }
 
 async function iconPng(size) {
-  return sharp(path.join(root, 'favicon.svg'), { density: 288, failOn: 'error' })
+  return sharp(path.join(root, 'mockupatt.png'), { failOn: 'error' })
+    .rotate()
     .resize(size, size, { fit: 'contain', background: { r: 255, g: 249, b: 236, alpha: 0 } })
     .png({ compressionLevel: 9, adaptiveFiltering: false })
     .toBuffer();
@@ -115,7 +116,8 @@ function createIco(entries) {
 
 async function main() {
   await fs.mkdir(imageDirectory, { recursive: true });
-  const manifest = {
+  const iconsOnly = process.argv.includes('--icons-only');
+  const manifest = iconsOnly ? JSON.parse(await fs.readFile(path.join(assets, 'image-manifest.json'), 'utf8')) : {
     version: 1,
     encoding: { format: 'webp', quality: 90, alphaQuality: 100, effort: 6, withoutEnlargement: true },
     images: {},
@@ -125,7 +127,7 @@ async function main() {
   let variantBytes = 0;
   let largestVariantsBytes = 0;
   let variantCount = 0;
-  for (const [filename, requestedWidths] of sources) {
+  for (const [filename, requestedWidths] of iconsOnly ? [] : sources) {
     const sourcePath = path.join(root, filename);
     const metadata = await sharp(sourcePath, { failOn: 'error' }).metadata();
     const dimensions = orientedDimensions(metadata);
@@ -143,6 +145,7 @@ async function main() {
     console.log(`${filename}: ${variants.map((variant) => `${variant.width}px / ${Math.round(variant.bytes / 1024)} KiB / q${variant.quality}`).join(', ')}`);
   }
 
+  manifest.icons = [];
   for (const [filename, size] of [
     ['favicon-96.png', 96],
     ['favicon-192.png', 192],
@@ -158,6 +161,15 @@ async function main() {
   const ico = createIco(icoEntries);
   await writeIfChanged(path.join(root, 'favicon.ico'), ico);
   manifest.icons.push({ src: 'favicon.ico', sizes: [32, 48], bytes: ico.length });
+
+  const svgPng = await fs.readFile(path.join(assets, 'favicon-192.png'));
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><image width="192" height="192" href="data:image/png;base64,${svgPng.toString('base64')}"/></svg>\n`;
+  await writeIfChanged(path.join(root, 'favicon.svg'), Buffer.from(svg));
+  if (iconsOnly) {
+    await writeIfChanged(path.join(assets, 'image-manifest.json'), Buffer.from(`${JSON.stringify(manifest, null, 2)}\n`));
+    console.log('Favicons gerados a partir de mockupatt.png.');
+    return;
+  }
 
   const social = await sharp(path.join(root, 'mockupatt.png'), { failOn: 'error' })
     .rotate()

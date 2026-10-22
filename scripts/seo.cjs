@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const { prepareImages, heroSizes } = require('./prepare-images.cjs');
 
 const root = path.resolve(__dirname, '..');
@@ -63,6 +64,7 @@ function metadata(page, html) {
   const json = JSON.stringify(structuredData(page, html), null, 2).replaceAll('<', '\\u003c');
   const hero = JSON.parse(fs.readFileSync(path.join(root, 'assets/image-manifest.json'), 'utf8')).images['poster-saladas-criativas-molhos.png'];
   const heroSrcset = hero.variants.map(item => `${item.src} ${item.width}w`).join(', ');
+  const iconVersion = createHash('sha256').update(fs.readFileSync(path.join(root, 'favicon.ico'))).digest('hex').slice(0, 12);
   return [
     '  <!-- SEO:START — gerado por npm run seo -->',
     `  <title>${escapeHtml(page.title)}</title>`,
@@ -70,9 +72,9 @@ function metadata(page, html) {
     named('robots', 'index, follow, max-image-preview:large'),
     named('referrer', 'strict-origin-when-cross-origin'),
     `  <link rel="canonical" href="${escapeHtml(absolute(page.path))}">`,
-    '  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">',
-    '  <link rel="icon" type="image/x-icon" sizes="32x32 48x48" href="favicon.ico">',
-    '  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">',
+    `  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png?v=${iconVersion}">`,
+    `  <link rel="icon" type="image/x-icon" sizes="32x32 48x48" href="favicon.ico?v=${iconVersion}">`,
+    `  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=${iconVersion}">`,
     named('theme-color', '#153D1B'),
     `  <link rel="preload" as="image" href="assets/images/poster-saladas-criativas-molhos-840.webp" imagesrcset="${heroSrcset}" imagesizes="${heroSizes}" fetchpriority="high">`,
     tag('og:type', 'website'), tag('og:site_name', config.siteName), tag('og:locale', config.locale),
@@ -117,7 +119,7 @@ function localReferences(html) {
   for (const match of html.matchAll(/srcset="([^"]+)"/g)) {
     references.push(...match[1].split(',').map(item => item.trim().split(/\s+/)[0]));
   }
-  return [...new Set(references.filter(ref => !/^(https?:|mailto:|tel:|#|data:)/i.test(ref)))];
+  return [...new Set(references.filter(ref => !/^(https?:|mailto:|tel:|#|data:)/i.test(ref)).map(ref => ref.split(/[?#]/)[0]))];
 }
 
 function validate(directory = root) {
