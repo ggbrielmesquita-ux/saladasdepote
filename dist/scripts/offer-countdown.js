@@ -8,6 +8,7 @@
   const clock = container.querySelector('[role="timer"]');
   const banner = document.querySelector('[data-offer-banner]');
   const eyebrow = document.querySelector('[data-offer-eyebrow]');
+  const expiryNotice = document.querySelector('[data-offer-expiry]');
   const offerEndsAt = Date.parse(banner?.dataset.offerEndsAt);
   const duration = 15 * 60 * 1000;
   const storageKey = 'saladas:offer-countdown-15m:v1';
@@ -17,12 +18,15 @@
 
   function syncOffer() {
     if (!Number.isFinite(offerEndsAt)) return;
-    if (Date.now() >= offerEndsAt) {
+    const currentTime = Date.now();
+    const isLastDay = currentTime >= offerEndsAt - 24 * 60 * 60 * 1000 && currentTime < offerEndsAt;
+    if (expiryNotice) expiryNotice.hidden = !isLastDay;
+    if (currentTime >= offerEndsAt) {
       banner.hidden = true;
       window.clearInterval(interval);
       return;
     }
-    if (Date.now() >= offerEndsAt - 24 * 60 * 60 * 1000 && eyebrow) {
+    if (isLastDay && eyebrow) {
       eyebrow.textContent = 'ÚLTIMO DIA DA OFERTA';
     }
   }
