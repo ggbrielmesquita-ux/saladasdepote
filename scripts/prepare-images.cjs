@@ -26,7 +26,7 @@ function prepareImages() {
         sizes = '(min-width: 576px) 96px, 80px';
       } else if (/auth-photo/.test(image)) sizes = '140px';
       else if (/offer-product/.test(image)) sizes = '280px';
-      else if (/solution-image/.test(image)) sizes = '192px';
+      else if (/solution-image/.test(image)) sizes = '(min-width: 960px) 400px, (min-width: 768px) 42vw, calc(100vw - 82px)';
       else sizes = '(min-width: 768px) 288px, (min-width: 456px) 414px, calc(100vw - 42px)';
     } else if (/^prova-social-\d\.webp$/.test(source)) {
       dimensions = [397, source === 'prova-social-5.webp' ? 526 : 532];

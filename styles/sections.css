@@ -217,7 +217,7 @@
 .routine-section .benefit-grid li div > span { display: block; margin-top: var(--space-1); color: var(--color-muted); font-size: .9375rem; line-height: 1.55; }
 .routine-section .bcheck { margin-top: 0; border: 0; background: var(--color-soft); color: var(--color-vibrant); }
 .solution-content { margin-top: var(--space-5); }
-.solution-image { width: 100%; max-width: 12rem; margin-inline: auto; border: 1px solid var(--color-border); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
+.solution-image { width: 100%; height: auto; object-fit: contain; margin-inline: auto; border: 1px solid var(--color-border); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
 
 @media (min-width: 48rem) {
   .routine-grid { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: start; gap: var(--space-6); }
