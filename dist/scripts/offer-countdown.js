@@ -6,12 +6,11 @@
   const minutes = container.querySelector('[data-countdown-minutes]');
   const seconds = container.querySelector('[data-countdown-seconds]');
   const clock = container.querySelector('[role="timer"]');
-  const caption = container.querySelector('[data-countdown-caption]');
   const banner = document.querySelector('[data-offer-banner]');
   const eyebrow = document.querySelector('[data-offer-eyebrow]');
   const offerEndsAt = Date.parse(banner?.dataset.offerEndsAt);
-  const duration = 5 * 60 * 1000;
-  const storageKey = 'saladas:recipe-introduction-ends:v1';
+  const duration = 15 * 60 * 1000;
+  const storageKey = 'saladas:offer-countdown-15m:v1';
   const now = Date.now();
   let endsAt = now + duration;
   let interval;
@@ -35,7 +34,6 @@
   }
   if (banner?.hidden) return;
 
-  // Tempo para conhecer a página; não altera preço ou validade da oferta.
   // Uma atualização da mesma aba mantém a contagem e não cria um novo prazo.
   try {
     const saved = Number(window.sessionStorage.getItem(storageKey));
@@ -55,10 +53,9 @@
     const secondValue = remaining % 60;
     minutes.textContent = String(minuteValue).padStart(2, '0');
     seconds.textContent = String(secondValue).padStart(2, '0');
-    clock.setAttribute('aria-label', `${minuteValue} minutos e ${secondValue} segundos restantes para conhecer as receitas`);
+    clock.setAttribute('aria-label', `${minuteValue} minutos e ${secondValue} segundos restantes na contagem regressiva`);
     if (remaining === 0) {
-      caption.textContent = 'Pronto para sua semana mais prática?';
-      clock.setAttribute('aria-label', 'Tempo de apresentação concluído');
+      clock.setAttribute('aria-label', 'Contagem regressiva concluída');
       window.clearInterval(interval);
     }
     return remaining;
