@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "encoding": {
+    "format": "webp",
+    "quality": 90,
+    "alphaQuality": 100,
+    "effort": 6,
+    "withoutEnlargement": true
+  },
+  "images": {
+    "poster-saladas-criativas-molhos.png": {
+      "width": 1122,
+      "height": 1402,
+      "originalBytes": 2246179,
+      "variants": [
+        {
+          "src": "assets/images/poster-saladas-criativas-molhos-560.webp",
+          "width": 560,
+          "height": 700,
+          "bytes": 113064,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/poster-saladas-criativas-molhos-840.webp",
+          "width": 840,
+          "height": 1050,
+          "bytes": 203954,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/poster-saladas-criativas-molhos-1122.webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 299278,
+          "quality": 90
+        }
+      ]
+    },
+    "marina.png": {
+      "width": 2048,
+      "height": 2048,
+      "originalBytes": 7792046,
+      "variants": [
+        {
+          "src": "assets/images/marina-160.webp",
+          "width": 160,
+          "height": 160,
+          "bytes": 6958,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/marina-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 18952,
+          "quality": 90
+        }
+      ]
+    },
+    "mockupatt.png": {
+      "width": 1448,
+      "height": 1086,
+      "originalBytes": 2288061,
+      "variants": [
+        {
+          "src": "assets/images/mockupatt-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 38948,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/mockupatt-560.webp",
+          "width": 560,
+          "height": 420,
+          "bytes": 92848,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/mockupatt-840.webp",
+          "width": 840,
+          "height": 630,
+          "bytes": 174050,
+          "quality": 90
+        }
+      ]
+    },
+    "salada-refrescante-molho-citrico.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 1249896,
+      "variants": [
+        {
+          "src": "assets/images/salada-refrescante-molho-citrico-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 12486,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/salada-refrescante-molho-citrico-384.webp",
+          "width": 384,
+          "height": 480,
+          "bytes": 35948,
+          "quality": 90
+        }
+      ]
+    },
+    "salada-caprese.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 1122790,
+      "variants": [
+        {
+          "src": "assets/images/salada-caprese-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 13326,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/salada-caprese-384.webp",
+          "width": 384,
+          "height": 480,
+          "bytes": 36890,
+          "quality": 90
+        }
+      ]
+    },
+    "salada-big-mac-molho-especial.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 2172607,
+      "variants": [
+        {
+          "src": "assets/images/salada-big-mac-molho-especial-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 18518,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/salada-big-mac-molho-especial-384.webp",
+          "width": 384,
+          "height": 480,
+          "bytes": 52922,
+          "quality": 90
+        }
+      ]
+    },
+    "salada-mediterranea-molho-agridoce.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 1464966,
+      "variants": [
+        {
+          "src": "assets/images/salada-mediterranea-molho-agridoce-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 17360,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/salada-mediterranea-molho-agridoce-384.webp",
+          "width": 384,
+          "height": 480,
+          "bytes": 45882,
+          "quality": 90
+        }
+      ]
+    },
+    "salada-toscana-molho-siciliano.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 1744544,
+      "variants": [
+        {
+          "src": "assets/images/salada-toscana-molho-siciliano-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 19232,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/salada-toscana-molho-siciliano-384.webp",
+          "width": 384,
+          "height": 480,
+          "bytes": 53602,
+          "quality": 90
+        }
+      ]
+    },
+    "salada-rustica-mostarda-e-mel.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 1922398,
+      "variants": [
+        {
+          "src": "assets/images/salada-rustica-mostarda-e-mel-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 20248,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/salada-rustica-mostarda-e-mel-384.webp",
+          "width": 384,
+          "height": 480,
+          "bytes": 60256,
+          "quality": 90
+        }
+      ]
+    },
+    "carrossel3.png": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 1541467,
+      "variants": [
+        {
+          "src": "assets/images/carrossel3-192.webp",
+          "width": 192,
+          "height": 240,
+          "bytes": 16894,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/carrossel3-420.webp",
+          "width": 420,
+          "height": 525,
+          "bytes": 57130,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/carrossel3-840.webp",
+          "width": 840,
+          "height": 1050,
+          "bytes": 141818,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/carrossel3-1080.webp",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 162730,
+          "quality": 90
+        }
+      ]
+    },
+    "carrosel1.webp": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 153438,
+      "variants": [
+        {
+          "src": "assets/images/carrosel1-420.webp",
+          "width": 420,
+          "height": 525,
+          "bytes": 60970,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/carrosel1-840.webp",
+          "width": 840,
+          "height": 1050,
+          "bytes": 120636,
+          "quality": 85
+        },
+        {
+          "src": "assets/images/carrosel1-1080.webp",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 147190,
+          "quality": 75
+        }
+      ]
+    },
+    "carrossel5.webp": {
+      "width": 1080,
+      "height": 1350,
+      "originalBytes": 77224,
+      "variants": [
+        {
+          "src": "assets/images/carrossel5-420.webp",
+          "width": 420,
+          "height": 525,
+          "bytes": 51436,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/carrossel5-840.webp",
+          "width": 840,
+          "height": 1050,
+          "bytes": 64982,
+          "quality": 80
+        },
+        {
+          "src": "assets/images/carrossel5-1080.webp",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 75070,
+          "quality": 75
+        }
+      ]
+    },
+    "imagem-produto.webp": {
+      "width": 819,
+      "height": 1024,
+      "originalBytes": 61108,
+      "variants": [
+        {
+          "src": "assets/images/imagem-produto-420.webp",
+          "width": 420,
+          "height": 525,
+          "bytes": 37050,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/imagem-produto-819.webp",
+          "width": 819,
+          "height": 1024,
+          "bytes": 57708,
+          "quality": 75
+        }
+      ]
+    },
+    "shotmatinal.png": {
+      "width": 268,
+      "height": 231,
+      "originalBytes": 141475,
+      "variants": [
+        {
+          "src": "assets/images/shotmatinal-268.webp",
+          "width": 268,
+          "height": 231,
+          "bytes": 20010,
+          "quality": 90
+        }
+      ]
+    },
+    "oque-vc-vai-encontrar.webp": {
+      "width": 1024,
+      "height": 1024,
+      "originalBytes": 58614,
+      "variants": [
+        {
+          "src": "assets/images/oque-vc-vai-encontrar-360.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 23216,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/oque-vc-vai-encontrar-720.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 44562,
+          "quality": 85
+        }
+      ]
+    }
+  },
+  "icons": [
+    {
+      "src": "assets/favicon-96.png",
+      "width": 96,
+      "height": 96,
+      "bytes": 2583
+    },
+    {
+      "src": "assets/favicon-192.png",
+      "width": 192,
+      "height": 192,
+      "bytes": 5496
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "bytes": 5218
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": [
+        32,
+        48
+      ],
+      "bytes": 2248
+    }
+  ],
+  "socialPreview": {
+    "src": "assets/social-preview.jpg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 228077
+  },
+  "stats": {
+    "originalCount": 15,
+    "variantCount": 35,
+    "originalBytes": 24036813,
+    "allVariantsBytes": 2416124,
+    "largestVariantsBytes": 1285050,
+    "largestVariantsSavingsPercent": 94.65
+  }
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /saladasdepote/
+Disallow: /dist/
+
+Sitemap: https://saladasdepote.com.br/sitemap.xml
