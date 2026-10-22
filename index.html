@@ -88,9 +88,28 @@
   <link rel="stylesheet" href="styles/sections.css">
   <script src="scripts/carousel.js" defer></script>
   <script src="scripts/lesson-preview.js" defer></script>
+  <script src="scripts/offer-countdown.js" defer></script>
 </head>
 <body>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1809981600129982&amp;ev=PageView&amp;noscript=1" alt=""/></noscript>
+
+<aside class="offer-banner" data-offer-banner data-offer-ends-at="2026-10-23T00:00:00-03:00" aria-label="Oferta especial">
+  <div class="container offer-banner-inner">
+    <div class="offer-banner-copy">
+      <p class="offer-banner-eyebrow" data-offer-eyebrow>OFERTA ESPECIAL</p>
+      <p class="offer-banner-title">Sua semana mais prática por <strong>R$19,90</strong></p>
+    </div>
+    <div class="offer-banner-timer" data-offer-countdown hidden>
+      <p class="offer-banner-caption" data-countdown-caption>Conheça as receitas em 5 minutos</p>
+      <div class="offer-clock" role="timer" aria-live="off" aria-label="5 minutos restantes">
+        <span class="offer-clock-unit"><strong data-countdown-minutes>05</strong><span aria-hidden="true">MIN</span></span>
+        <span class="offer-clock-separator" aria-hidden="true">:</span>
+        <span class="offer-clock-unit"><strong data-countdown-seconds>00</strong><span aria-hidden="true">SEG</span></span>
+      </div>
+    </div>
+    <a class="offer-banner-cta" href="#pricing">VER OFERTA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+  </div>
+</aside>
 
 <!-- ━━━ HERO ━━━ -->
 <main id="main-content">
