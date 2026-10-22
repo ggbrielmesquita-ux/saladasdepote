@@ -1,0 +1,194 @@
+/* Saladas Criativas + Molhos — fundação visual compartilhada. */
+:root {
+  color-scheme: light;
+  --color-forest: #153D1B;
+  --color-olive: #5E801B;
+  --color-vibrant: #20864A;
+  --color-soft: #EEF6E9;
+  --color-cream: #FFF9EC;
+  --color-yellow: #F4DE77;
+  --color-white: #FFFFFF;
+  --color-ink: #183624;
+
+  --color-text: var(--color-ink);
+  --color-heading: var(--color-forest);
+  --color-muted: #52634F;
+  --color-border: #DCE6D6;
+  --color-action: var(--color-vibrant);
+  --color-action-hover: var(--color-forest);
+  --color-focus: var(--color-olive);
+
+  --font-heading: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --text-meta: .8125rem;
+  --text-small: .875rem;
+  --text-body: clamp(1rem, .97rem + .15vw, 1.0625rem);
+  --text-lead: clamp(1rem, .94rem + .3vw, 1.125rem);
+  --text-title: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --text-hero: clamp(1.75rem, 1.45rem + 1.3vw, 2.5rem);
+  --leading-body: 1.65;
+  --leading-heading: 1.25;
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --section-space: clamp(3rem, 6vw, 5rem);
+  --gutter: clamp(1.25rem, 3vw, 2rem);
+  --container-width: 60rem;
+  --reading-width: 40rem;
+
+  --radius-sm: .75rem;
+  --radius-card: 1.25rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 10px rgb(21 61 27 / 4%);
+  --shadow-card: 0 6px 24px rgb(21 61 27 / 6%);
+  --shadow-raised: 0 12px 32px rgb(21 61 27 / 9%);
+  --shadow-button: 0 4px 12px rgb(21 61 27 / 14%);
+  --transition: 200ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--space-6); }
+body {
+  min-width: 0;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: var(--leading-body);
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+img, video { display: block; max-width: 100%; height: auto; }
+svg { max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+button { color: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+h1, h2, h3 {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  line-height: var(--leading-heading);
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+strong { font-weight: 700; }
+::selection { background: var(--color-yellow); color: var(--color-forest); }
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+/* Layout e superfícies: podem ser usados em novas seções sem duplicar CSS. */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.container > *, .recipe-info, .auth-text { min-width: 0; }
+.section { padding-block: var(--section-space); }
+.surface-white { background-color: var(--color-white); }
+.surface-soft { background-color: var(--color-soft); }
+.surface-cream { background-color: var(--color-cream); }
+.text-accent { color: var(--color-vibrant); }
+.text-strong { color: var(--color-ink); }
+.stitle {
+  max-width: var(--reading-width);
+  margin: 0 auto var(--space-3);
+  font-size: var(--text-title);
+  text-align: center;
+}
+.stitle span { color: var(--color-vibrant); }
+.sdivider {
+  width: 3rem;
+  height: 3px;
+  margin: 0 auto var(--space-8);
+  border-radius: var(--radius-pill);
+  background: var(--color-olive);
+  position: relative;
+}
+.sdivider::after {
+  content: '';
+  position: absolute;
+  right: -9px;
+  top: -3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 70% 20% 70% 20%;
+  background: var(--color-yellow);
+}
+.sdesc {
+  max-width: var(--reading-width);
+  margin: 0 auto var(--space-8);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+/* Superfície de card comum aos componentes já existentes. */
+:is(.card, .pain-list li, .recipe-item, .bonus-card, .offer-card, .faq-item) {
+  min-width: 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* Uma única base para os dois CTAs de compra. */
+:is(.button, .btn-cta, .offer-cta) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.5rem;
+  padding: var(--space-4) var(--space-6);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: var(--color-action);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-button);
+  transition: background-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.btn-cta { max-width: 30rem; margin-inline: auto; }
+:is(.button, .btn-cta, .offer-cta):focus-visible {
+  outline-color: var(--color-forest);
+  box-shadow: 0 0 0 3px var(--color-white);
+}
+@media (hover: hover) {
+  :is(.button, .btn-cta, .offer-cta):hover {
+    background: var(--color-action-hover);
+    box-shadow: var(--shadow-raised);
+    transform: translateY(-2px);
+  }
+}
+:is(.button, .btn-cta, .offer-cta):active {
+  background: var(--color-forest);
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+.btn-sub { margin-top: var(--space-3); color: var(--color-muted); font-size: var(--text-small); text-align: center; }
+
+/* Os estados continuam visíveis sem impor movimento ao usuário. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

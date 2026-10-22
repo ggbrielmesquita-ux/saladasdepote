@@ -33,9 +33,15 @@ Não edite manualmente o bloco `SEO:START`/`SEO:END`: altere a configuração e 
 
 O JSON-LD descreve `WebSite`, `WebPage` e `Product` com `Offer` de **19.90 BRL**, sem criar avaliações, disponibilidade, certificações ou dados da empresa. Os teasers de receitas não receberam `Recipe`, pois não publicam ingredientes/instruções completos. O FAQ permanece no HTML. Não foram inventados uploadDate ou outras informações para marcar o vídeo como `VideoObject`. Referências: [Product](https://developers.google.com/search/docs/appearance/structured-data/product-snippet), [políticas de dados estruturados](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
 
+## Depoimentos em carrossel
+
+Os seis depoimentos em imagem agora usam um carrossel automático contínuo, reaproveitando `scripts/carousel.js` da hero. Uma imagem fica visível por vez em um espaço de proporção fixa, sem cortar o conteúdo, reduzindo a altura da seção no celular. O comportamento respeita a preferência de movimento reduzido do dispositivo. As imagens originais e a ordem dos depoimentos foram preservadas.
+
 ## Vídeo solicitado
 
-O card **“Assista à prévia da aula 1”** fica imediatamente antes dos bônus, depois dos depoimentos. Incorpora o vídeo fornecido `2-A2chrN41w` pelo domínio `youtube-nocookie.com`, em proporção 9:16, com carregamento lazy, controles do YouTube, fullscreen e link externo alternativo. Não usa autoplay. Carregamento e reprodução foram verificados no navegador.
+O card **“Assista à prévia da aula 1”** fica logo depois do carrossel da hero e antes da lista de receitas. Incorpora o vídeo fornecido `2-A2chrN41w` pelo domínio `youtube-nocookie.com`, em proporção 9:16, com carregamento lazy, controles do YouTube, fullscreen e link externo alternativo. O volume inicial do player é configurado em 100%. A reprodução automática é tentada com som quando pelo menos 55% do player está visível. Se o navegador bloquear, o código tenta novamente sem som; o visitante pode ativar o áudio pelos controles nativos, com o volume já configurado no máximo. Isso não altera o volume do sistema operacional. [Política de autoplay do Chrome](https://developer.chrome.com/blog/autoplay/).
+
+A API é preparada perto da seção, mas não dá play antes de chegar ao card. O vídeo pausa ao sair da tela ou ocultar a aba e retoma ao retornar; pausas manuais são respeitadas e o fim do vídeo não inicia uma repetição automática. Se o navegador impedir autoplay, o player permanece no card para um toque no play, sem abrir outra página. O tratamento de erro 153 continua separado desse comportamento.
 
 ### Compatibilidade do player / erro 153
 
@@ -78,3 +84,7 @@ Na conferência do endereço local, a biblioteca da Meta avisou que o pixel 1809
 3. No relatório **Sitemaps**, envie `https://saladasdepote.com.br/sitemap.xml` e confira se a leitura foi concluída. [Ajuda oficial de sitemaps](https://support.google.com/webmasters/answer/7451001).
 4. Em **Inspeção de URL**, insira `https://saladasdepote.com.br/`, execute **Testar URL publicada** e confira se o Google consegue acessar e indexar a página. Verifique que a canonical declarada é a raiz HTTPS. Se estiver elegível, use **Solicitar indexação**. [Inspeção de URL](https://support.google.com/webmasters/answer/9012289).
 5. Confira os relatórios de indexação e a canonical escolhida pelo Google depois do processamento. Teste o domínio publicado também no [Teste de pesquisa aprimorada](https://search.google.com/test/rich-results), sem adicionar avaliações fictícias para eliminar avisos opcionais. Solicitar indexação não garante inclusão ou posição, e pedidos repetidos não aceleram o rastreamento. [Orientação do Google](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
+
+## Dores e solução
+
+As dificuldades e os benefícios foram condensados em um bloco de comparação: cinco dores em frases curtas e três benefícios que reúnem as informações anteriores (60 receitas, molhos, passo a passo, ingredientes de mercado, qualquer pote, preparo em 30 minutos e conservação de 5 a 7 dias). A fotografia existente foi preservada em tamanho mais compacto. Os cards ficam lado a lado no desktop e empilhados no celular.
