@@ -101,40 +101,41 @@
 .material-preview-figure { max-width: 52rem; margin-inline: auto; text-align: center; }
 .material-preview-figure picture { display: block; }
 .material-preview-media { width: 100%; height: auto; aspect-ratio: 548 / 320; object-fit: contain; }
-.material-preview-toggle {
-  min-height: 2.75rem;
-  margin-top: var(--space-4);
-  padding: var(--space-2) var(--space-4);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  background: var(--color-white);
-  color: var(--color-forest);
-  font-size: var(--text-small);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color var(--transition), border-color var(--transition);
-}
-.material-preview-toggle:active { background: var(--color-cream); }
 .sample-download {
   max-width: 38rem;
   margin: var(--space-6) auto 0;
   padding: clamp(1.25rem, 3vw, 2rem);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-olive);
   border-radius: var(--radius-lg);
   background: var(--color-white);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 12px 32px rgb(21 61 27 / 12%);
   text-align: center;
   scroll-margin-top: var(--space-6);
 }
+.sample-free-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto var(--space-5);
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid #D9BD47;
+  border-radius: var(--radius-sm);
+  background: var(--color-yellow);
+  color: var(--color-forest);
+  box-shadow: 0 3px 0 rgb(94 128 27 / 14%);
+}
+.sample-free-highlight svg { width: 2.75rem; height: 2.75rem; flex: 0 0 2.75rem; }
+.sample-free-highlight span { display: block; margin-bottom: var(--space-1); font-size: .75rem; font-weight: 700; letter-spacing: .12em; line-height: 1.3; text-transform: uppercase; }
+.sample-free-highlight strong { display: block; font-family: var(--font-heading); font-size: clamp(2rem, 1.8rem + .8vw, 2.5rem); font-weight: 800; line-height: 1; letter-spacing: -.035em; }
 .sample-download h3 { margin-bottom: var(--space-3); font-size: clamp(1.25rem, 1.05rem + .6vw, 1.5rem); }
 .sample-download p { color: var(--color-muted); }
 .sample-download-button { max-width: 30rem; gap: var(--space-2); margin: var(--space-5) auto 0; padding-inline: var(--space-4); box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 4px 14px rgb(32 134 74 / 18%); }
 .sample-download-button svg { width: 1.5rem; height: 1.5rem; flex: 0 0 1.5rem; }
 .sample-download-button span { min-width: 0; }
 .sample-download .sample-download-note { margin-top: var(--space-3); font-size: var(--text-small); }
-@media (hover: hover) {
-  .material-preview-toggle:hover { background: var(--color-cream); border-color: var(--color-olive); }
-}
 .demo-section { padding-block: var(--space-6) var(--section-space); }
 .demo-section .container { padding-inline: var(--space-3); }
 .demo-frame {
