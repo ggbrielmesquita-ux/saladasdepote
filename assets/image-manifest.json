@@ -357,6 +357,34 @@
           "quality": 85
         }
       ]
+    },
+    "kit-completo-saladas-no-pote.png": {
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 2467300,
+      "variants": [
+        {
+          "src": "assets/images/kit-completo-saladas-no-pote-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 56622,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/kit-completo-saladas-no-pote-560.webp",
+          "width": 560,
+          "height": 560,
+          "bytes": 137060,
+          "quality": 90
+        },
+        {
+          "src": "assets/images/kit-completo-saladas-no-pote-840.webp",
+          "width": 840,
+          "height": 840,
+          "bytes": 261474,
+          "quality": 90
+        }
+      ]
     }
   },
   "icons": [
@@ -394,11 +422,11 @@
     "bytes": 228077
   },
   "stats": {
-    "originalCount": 15,
-    "variantCount": 35,
-    "originalBytes": 24036813,
-    "allVariantsBytes": 2416124,
-    "largestVariantsBytes": 1285050,
-    "largestVariantsSavingsPercent": 94.65
+    "originalCount": 16,
+    "variantCount": 38,
+    "originalBytes": 26504113,
+    "allVariantsBytes": 2871280,
+    "largestVariantsBytes": 1546524,
+    "largestVariantsSavingsPercent": 94.16
   }
 }

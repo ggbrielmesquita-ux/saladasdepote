@@ -41,6 +41,14 @@
   border-radius: var(--radius-pill);
   background: var(--color-olive);
 }
+.hero-product {
+  display: block;
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+  margin: 0 auto var(--space-5);
+  object-fit: contain;
+}
 .hero h1 {
   margin: 0 0 var(--space-5);
   font-size: clamp(1.625rem, 1.35rem + 1.1vw, 2.625rem);

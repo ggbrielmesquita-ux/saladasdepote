@@ -26,6 +26,7 @@ const sources = [
   ['poster-saladas-criativas-molhos.png', [560, 840, 1122]],
   ['marina.png', [160, 320]],
   ['mockupatt.png', [320, 560, 840]],
+  ['kit-completo-saladas-no-pote.png', [320, 560, 840]],
   ['salada-refrescante-molho-citrico.png', [192, 384]],
   ['salada-caprese.png', [192, 384]],
   ['salada-big-mac-molho-especial.png', [192, 384]],

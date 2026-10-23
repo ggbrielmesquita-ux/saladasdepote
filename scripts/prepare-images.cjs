@@ -18,6 +18,7 @@ function prepareImages() {
       dimensions = [entry.width, entry.height];
       variants = entry.variants;
       if (/hero-banner/.test(image)) sizes = heroSizes;
+      else if (/hero-product/.test(image)) sizes = '(min-width: 1100px) 384px, (min-width: 960px) 34vw, (min-width: 434px) 384px, calc(100vw - 50px)';
       else if (/demo-media/.test(image)) {
         variants = variants.filter(item => item.width >= 420);
         sizes = '(min-width: 480px) 462px, calc(100vw - 42px)';
