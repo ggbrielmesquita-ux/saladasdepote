@@ -87,6 +87,7 @@
   <link rel="stylesheet" href="styles/design-system.css">
   <link rel="stylesheet" href="styles/sections.css">
   <script src="scripts/carousel.js" defer></script>
+  <script src="scripts/material-preview.js" defer></script>
   <script src="scripts/lesson-preview.js" defer></script>
 </head>
 <body>
@@ -109,6 +110,22 @@
         <svg class="hero-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- ━━━ MATERIAL POR DENTRO ━━━ -->
+<section class="material-preview surface-soft" aria-labelledby="material-preview-title" data-material-preview>
+  <div class="container">
+    <h2 class="stitle" id="material-preview-title">Veja o material <span>por dentro</span></h2>
+    <p class="sdesc">Uma prévia real das receitas e do passo a passo de preparo.</p>
+    <figure class="material-preview-figure">
+      <picture data-preview-picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="assets/media/video-tablet-poster.webp">
+        <source type="image/webp" srcset="assets/media/video-tablet.webp">
+        <img id="material-preview-image" class="material-preview-media" src="assets/media/video-tablet.webp" alt="Tablet mostrando as páginas do material, com fotos das saladas, ingredientes, ordem das camadas e preparo passo a passo" width="548" height="320" loading="lazy" decoding="async" data-preview-image data-animation-src="assets/media/video-tablet.webp" data-still-src="assets/media/video-tablet-poster.webp">
+      </picture>
+      <button class="material-preview-toggle" type="button" aria-controls="material-preview-image" data-preview-toggle hidden>Pausar animação</button>
+    </figure>
   </div>
 </section>
 

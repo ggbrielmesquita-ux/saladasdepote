@@ -6,7 +6,7 @@
     "dev": "node scripts/dev-server.cjs",
     "seo": "node scripts/seo.cjs",
     "check:seo": "node scripts/seo.cjs --check",
-    "images": "node scripts/optimize-images.cjs && node scripts/prepare-images.cjs",
+    "images": "node scripts/optimize-images.cjs && node scripts/prepare-images.cjs && node scripts/optimize-tablet.cjs",
     "build": "node scripts/build.cjs",
     "preview": "node scripts/dev-server.cjs --production"
   }
