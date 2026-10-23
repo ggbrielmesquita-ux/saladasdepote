@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { createHash } = require('node:crypto');
-const { prepareImages, heroSizes } = require('./prepare-images.cjs');
+const { prepareImages, heroProductSizes } = require('./prepare-images.cjs');
 
 const root = path.resolve(__dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'site.config.json'), 'utf8'));
@@ -62,7 +62,7 @@ function metadata(page, html) {
   const tag = (property, value) => `  <meta property="${property}" content="${escapeHtml(value)}">`;
   const named = (name, value) => `  <meta name="${name}" content="${escapeHtml(value)}">`;
   const json = JSON.stringify(structuredData(page, html), null, 2).replaceAll('<', '\\u003c');
-  const hero = JSON.parse(fs.readFileSync(path.join(root, 'assets/image-manifest.json'), 'utf8')).images['poster-saladas-criativas-molhos.png'];
+  const hero = JSON.parse(fs.readFileSync(path.join(root, 'assets/image-manifest.json'), 'utf8')).images['kit-completo-saladas-no-pote.png'];
   const heroSrcset = hero.variants.map(item => `${item.src} ${item.width}w`).join(', ');
   const iconVersion = createHash('sha256').update(fs.readFileSync(path.join(root, 'favicon.ico'))).digest('hex').slice(0, 12);
   return [
@@ -76,7 +76,7 @@ function metadata(page, html) {
     `  <link rel="icon" type="image/x-icon" sizes="32x32 48x48" href="favicon.ico?v=${iconVersion}">`,
     `  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=${iconVersion}">`,
     named('theme-color', '#153D1B'),
-    `  <link rel="preload" as="image" href="assets/images/poster-saladas-criativas-molhos-840.webp" imagesrcset="${heroSrcset}" imagesizes="${heroSizes}" fetchpriority="high">`,
+    `  <link rel="preload" as="image" href="assets/images/kit-completo-saladas-no-pote-560.webp" imagesrcset="${heroSrcset}" imagesizes="${heroProductSizes}" fetchpriority="high">`,
     tag('og:type', 'website'), tag('og:site_name', config.siteName), tag('og:locale', config.locale),
     tag('og:title', page.title), tag('og:description', page.description), tag('og:url', absolute(page.path)),
     tag('og:image', absolute(page.socialImage)), tag('og:image:width', '1200'), tag('og:image:height', '630'),

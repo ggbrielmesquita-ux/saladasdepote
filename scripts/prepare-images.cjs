@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const heroSizes = '(min-width: 1152px) 526px, (min-width: 960px) 46vw, (min-width: 576px) 544px, 100vw';
+const heroProductSizes = '(min-width: 434px) 384px, calc(100vw - 50px)';
 
 function prepareImages() {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/image-manifest.json'), 'utf8'));
@@ -18,7 +19,7 @@ function prepareImages() {
       dimensions = [entry.width, entry.height];
       variants = entry.variants;
       if (/hero-banner/.test(image)) sizes = heroSizes;
-      else if (/hero-product/.test(image)) sizes = '(min-width: 1100px) 384px, (min-width: 960px) 34vw, (min-width: 434px) 384px, calc(100vw - 50px)';
+      else if (/hero-product/.test(image)) sizes = heroProductSizes;
       else if (/demo-media/.test(image)) {
         variants = variants.filter(item => item.width >= 420);
         sizes = '(min-width: 480px) 462px, calc(100vw - 42px)';
@@ -47,5 +48,5 @@ function prepareImages() {
   if (html !== original) fs.writeFileSync(file, html);
 }
 
-module.exports = { prepareImages, heroSizes };
+module.exports = { prepareImages, heroSizes, heroProductSizes };
 if (require.main === module) prepareImages();
