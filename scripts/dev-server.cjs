@@ -14,6 +14,7 @@ const types = {
   '.webp': 'image/webp', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml', '.ico': 'image/x-icon',
   '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8',
+  '.pdf': 'application/pdf',
 };
 
 async function start() {
@@ -57,6 +58,7 @@ async function start() {
         'Cache-Control': production && status === 200 ? (/image\//.test(type) ? 'public, max-age=86400' : 'public, max-age=0, must-revalidate') : 'no-store',
         'Last-Modified': stat.mtime.toUTCString(), ETag: etag, Vary: 'Accept-Encoding',
       };
+      if (type === 'application/pdf') headers['Content-Disposition'] = `attachment; filename="${path.basename(file)}"`;
       if (!production || status !== 200) headers['X-Robots-Tag'] = 'noindex, follow';
       if (production && status === 200 && req.headers['if-none-match'] === etag) {
         res.writeHead(304, headers);
